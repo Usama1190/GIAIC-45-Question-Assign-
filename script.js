@@ -94,15 +94,23 @@ Use your list to print a series of statements about these items, such as
 dinner, who would you invite? Make a list that includes at least three
 people you’d like to invite to dinner. Then use your list to print a
 message to each person, inviting them to dinner. */
-var invitePerson = ['Ali', 'Umar', 'Abubakar', 'Usman'];
-var message = 'I would like to invite you take a dinner today.';
-for (var i = 0; i < invitePerson.length; i++) {
-    var inviteMessage = invitePerson[i] + ' ' + message;
-    console.log(inviteMessage);
-}
+// var invitePerson = ['Ali','Umar','Abubakar','Usman'];
+// var message = 'I would like to invite you take a dinner today.';
+// for(var i = 0; i < invitePerson.length; i++) {
+//     var inviteMessage = invitePerson[i] + ' ' + message;
+//     console.log(inviteMessage);
+// }
 /* 15. Changing Guest List: You just heard that one of your guests can’t
 make the dinner, so you need to send out a new set of invitations. You’ll
 have to think of someone else to invite. */
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+// inviteGuest.pop();
+// inviteGuest.push('Hamza');
+// var invitationMessage = 'I would like to invite you take a dinner today.';
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+// }
 /* 16. • Start with your program from Exercise 14. Add a print statement at
 the end of your program stating the name of the guest who can’t make it.
 
@@ -111,6 +119,14 @@ the name of the new person you are inviting.
 
 • Print a second set of invitation messages, one for each person who is
 still in your list. */
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+// inviteGuest.pop();
+// inviteGuest.push('Hamza');
+// var invitationMessage = 'I would like to invite you take a dinner today.';
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+// }
 /* 17. More Guests: You just found a bigger dinner table, so now more space
 is available. Think of three more guests to invite to dinner.
 
@@ -122,6 +138,16 @@ end of your program informing people that you found a bigger dinner table.
 • Add one new guest to the middle of your array. • Use append() to add one
 new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
+var inviteGuest = ['Ali', 'Umar', 'Abubakar', 'Usman'];
+// inviteGuest.pop();
+inviteGuest.unshift('Usama'); // first guest
+// inviteGuest.slice(2,2);          // second guest
+inviteGuest.push('Hamza'); // third guest
+var invitationMessage = 'I would like to invite you take a dinner today.';
+for (var i = 0; i < inviteGuest.length; i++) {
+    var invitation = inviteGuest[i] + ' ' + invitationMessage;
+    console.log(invitation);
+}
 /* 18. Shrinking Guest List: You just found out that your new dinner table
 won’t arrive in time for the dinner, and you have space for only two guests.
 

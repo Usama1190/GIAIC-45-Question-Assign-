@@ -204,14 +204,15 @@ people you’d like to invite to dinner. Then use your list to print a
 message to each person, inviting them to dinner. */
 
 
-var invitePerson = ['Ali','Umar','Abubakar','Usman'];
+// var invitePerson = ['Ali','Umar','Abubakar','Usman'];
 
-var message = 'I would like to invite you take a dinner today.';
+// var message = 'I would like to invite you take a dinner today.';
 
-for(var i = 0; i < invitePerson.length; i++) {
-    var inviteMessage = invitePerson[i] + ' ' + message;
-    console.log(inviteMessage);
-}
+// for(var i = 0; i < invitePerson.length; i++) {
+//     var inviteMessage = invitePerson[i] + ' ' + message;
+//     console.log(inviteMessage);
+// }
+
 
 
 
@@ -220,15 +221,19 @@ for(var i = 0; i < invitePerson.length; i++) {
 make the dinner, so you need to send out a new set of invitations. You’ll 
 have to think of someone else to invite. */
 
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 
+// inviteGuest.pop();
 
+// inviteGuest.push('Hamza');
 
+// var invitationMessage = 'I would like to invite you take a dinner today.';
 
-
-
-
-
-
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+    
+// }
 
 
 
@@ -244,15 +249,19 @@ the name of the new person you are inviting.
 still in your list. */ 
 
 
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 
+// inviteGuest.pop();
 
+// inviteGuest.push('Hamza');
 
+// var invitationMessage = 'I would like to invite you take a dinner today.';
 
-
-
-
-
-
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+    
+// }
 
 
 
@@ -272,7 +281,23 @@ new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
 
 
+var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 
+// inviteGuest.pop();
+
+inviteGuest.unshift('Usama');    // first guest
+
+// inviteGuest.slice(2,2);          // second guest
+
+inviteGuest.push('Hamza');       // third guest
+
+var invitationMessage = 'I would like to invite you take a dinner today.';
+
+for(let i = 0; i < inviteGuest.length; i++) {
+    let invitation = inviteGuest[i] + ' ' + invitationMessage;
+    console.log(invitation);
+    
+}
 
 
 
