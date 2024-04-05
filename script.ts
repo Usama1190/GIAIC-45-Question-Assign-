@@ -31,6 +31,14 @@ person’s name in lowercase, uppercase, and titlecase. */
 
 // console.log(personNameUpperCase);
 
+// var first_letter = personName[0].toUpperCase();           // [0] is the first character of string
+
+// var remaining_letters = personName.slice(1).toLowerCase();
+
+// var  personNameTitleCase = first_letter + remaining_letters;
+
+// console.log(personNameTitleCase);                         // title case 
+
 
 
 
@@ -42,8 +50,11 @@ the following, including the quotation marks:
 Albert Einstein once said, “A person who never made a mistake never tried 
 anything new.” */
 
+// let quoteAuthor = "Albert Einstein";
 
-// console.log('Albert Einstein once said, "A person who never made a mistake nerver tired anything new."');
+// let quoteText = `A person who never made a mistake never tried anything new.`;
+
+// console.log(`${quoteAuthor} once said, ${quoteText}`);
 
 
 
@@ -56,9 +67,9 @@ and store it in a new variable called message. Print your message. */
 
 // var famous_person = 'Albert Einstein';
 
-// var message = ': "A person who never made a mistake never tired anything new."';
+// var message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
 
-// console.log(famous_person + message);
+// console.log(message);
 
 
 
@@ -72,10 +83,13 @@ so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
 
 
-// var personName ='   Usama'      ;
+let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
+console.log('Original Name List');
+console.log(fullname);
 
-// console.log(personName);
-
+let strippedName = fullname.trim();
+console.log('\nStriped Name List');
+console.log(strippedName);
 
 
 
@@ -281,23 +295,23 @@ new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
 
 
-var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 
 // inviteGuest.pop();
 
-inviteGuest.unshift('Usama');    // first guest
+// inviteGuest.unshift('Usama');    // first guest
 
 // inviteGuest.slice(2,2);          // second guest
 
-inviteGuest.push('Hamza');       // third guest
+// inviteGuest.push('Hamza');       // third guest
 
-var invitationMessage = 'I would like to invite you take a dinner today.';
+// var invitationMessage = 'I would like to invite you take a dinner today.';
 
-for(let i = 0; i < inviteGuest.length; i++) {
-    let invitation = inviteGuest[i] + ' ' + invitationMessage;
-    console.log(invitation);
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
     
-}
+// }
 
 
 

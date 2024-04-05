@@ -12,26 +12,36 @@ person’s name in lowercase, uppercase, and titlecase. */
 // console.log(personNameLowerCase);
 // var personNameUpperCase = personName.toUpperCase();    // toUpperCase()
 // console.log(personNameUpperCase);
+// var first_letter = personName[0].toUpperCase();           // [0] is the first character of string
+// var remaining_letters = personName.slice(1).toLowerCase();
+// var  personNameTitleCase = first_letter + remaining_letters;
+// console.log(personNameTitleCase);                         // title case 
 /* 4. Famous Quote: Find a quote from a famous person you admire. Print the
 quote and the name of its author. Your output should look something like
 the following, including the quotation marks:
 
 Albert Einstein once said, “A person who never made a mistake never tried
 anything new.” */
-// console.log('Albert Einstein once said, "A person who never made a mistake nerver tired anything new."');
+// let quoteAuthor = "Albert Einstein";
+// let quoteText = `A person who never made a mistake never tried anything new.`;
+// console.log(`${quoteAuthor} once said, ${quoteText}`);
 /* 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous
 person’s name in a variable called famous_person. Then compose your message
 and store it in a new variable called message. Print your message. */
 // var famous_person = 'Albert Einstein';
-// var message = ': "A person who never made a mistake never tired anything new."';
-// console.log(famous_person + message);
+// var message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
+// console.log(message);
 /* 6. Stripping Names: Store a person’s name, and include some whitespace
 characters at the beginning and end of the name. Make sure you use each
 character combination, "\t" and "\n", at least once. Print the name once,
 so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
-// var personName ='   Usama'      ;
-// console.log(personName);
+var fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
+console.log('Original Name List');
+console.log(fullname);
+var strippedName = fullname.trim();
+console.log('\nStriped Name List');
+console.log(strippedName);
 /* 7. Number Eight: Write addition, subtraction, multiplication, and
 division operations that each result in the number 8. Be sure to enclose
 your operations in print statements to see the results. */
@@ -138,16 +148,16 @@ end of your program informing people that you found a bigger dinner table.
 • Add one new guest to the middle of your array. • Use append() to add one
 new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
-var inviteGuest = ['Ali', 'Umar', 'Abubakar', 'Usman'];
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 // inviteGuest.pop();
-inviteGuest.unshift('Usama'); // first guest
+// inviteGuest.unshift('Usama');    // first guest
 // inviteGuest.slice(2,2);          // second guest
-inviteGuest.push('Hamza'); // third guest
-var invitationMessage = 'I would like to invite you take a dinner today.';
-for (var i = 0; i < inviteGuest.length; i++) {
-    var invitation = inviteGuest[i] + ' ' + invitationMessage;
-    console.log(invitation);
-}
+// inviteGuest.push('Hamza');       // third guest
+// var invitationMessage = 'I would like to invite you take a dinner today.';
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+// }
 /* 18. Shrinking Guest List: You just found out that your new dinner table
 won’t arrive in time for the dinner, and you have space for only two guests.
 
