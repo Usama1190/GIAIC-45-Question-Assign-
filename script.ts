@@ -395,13 +395,29 @@ show that its order has been changed.
 Print the list to show that its order has changed. */
 
 
-let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
+// let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
 
-console.log(favourite_places);
+// console.log(favourite_places);
 
-console.log(favourite_places.sort());
+// console.log(favourite_places.sort());
 
+// console.log(favourite_places);
 
+// let reverse_order = favourite_places.reverse();
+
+// console.log(reverse_order);
+
+// let reverse_order_again = reverse_order.reverse();
+
+// console.log(reverse_order_again);
+
+// let sorted_array = favourite_places.sort();
+
+// console.log(sorted_array);
+
+// let reversed_sorted_array = sorted_array.reverse();
+
+// console.log(reversed_sorted_array);
 
 
 
@@ -411,11 +427,12 @@ console.log(favourite_places.sort());
 through 18, print a message indicating the number of people you are inviting 
 to dinner. */
 
+// var invitePerson = ['Ali','Umar','Abubakar','Usman','Hamza','Usama','Asad'];
 
+// let total_number_of_invited_people = 
+// `I have invite ${invitePerson.length} guests for dinner.`;
 
-
-
-
+// console.log(total_number_of_invited_people);
 
 
 
@@ -426,12 +443,9 @@ make a list of mountains, rivers, countries, cities, languages, or anything
 else you’d like. Write a program that creates a list containing these items. */
 
 
+// let favorite_things = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
 
-
-
-
-
-
+// console.log(favorite_things);
 
 
 
@@ -441,12 +455,16 @@ else you’d like. Write a program that creates a list containing these items. *
 a program that creates Objects containing these items. */
 
 
+// let favorite_things_object = {
+//     mountain: 'Mount Everest',
+//     river: 'Amazon river',
+//     country: 'USA',
+//     city: 'New york',
+//     language: 'English US',
+//     fruit: 'Mango'
+// }
 
-
-
-
-
-
+// console.log(favorite_things_object);
 
 
 
@@ -458,15 +476,9 @@ programs to produce an index error. Make sure you correct the error before
 closing the program. */
 
 
+// let favorite_things_error = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
 
-
-
-
-
-
-
-
-
+// favorite_things_error[]
 
 
 
@@ -489,8 +501,16 @@ evaluates to True or False.
 another 5 tests evaluate to False. */
 
 
+// Array
+let fruits = ['banana','mango','apple','orange'];
 
+let isfruits_apple = fruits.includes('apple');             //True
 
+let isfruits_watermalon = fruits.includes('watermalon');   //false
+
+console.log(isfruits_apple);
+
+console.log(isfruits_watermalon);
 
 
 

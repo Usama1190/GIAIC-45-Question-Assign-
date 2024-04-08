@@ -221,21 +221,47 @@ show that its order has been changed.
 
 • Sort to change your array so it’s stored in reverse alphabetical order.
 Print the list to show that its order has changed. */
-var favourite_places = ['toronto', 'paris', 'los angeles', 'california', 'new york', 'london'];
-console.log(favourite_places);
-console.log(favourite_places.sort());
+// let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
+// console.log(favourite_places);
+// console.log(favourite_places.sort());
+// console.log(favourite_places);
+// let reverse_order = favourite_places.reverse();
+// console.log(reverse_order);
+// let reverse_order_again = reverse_order.reverse();
+// console.log(reverse_order_again);
+// let sorted_array = favourite_places.sort();
+// console.log(sorted_array);
+// let reversed_sorted_array = sorted_array.reverse();
+// console.log(reversed_sorted_array);
 /* 20. Dinner Guests: Working with one of the programs from Exercises 14
 through 18, print a message indicating the number of people you are inviting
 to dinner. */
+// var invitePerson = ['Ali','Umar','Abubakar','Usman','Hamza','Usama','Asad'];
+// let total_number_of_invited_people = 
+// `I have invite ${invitePerson.length} guests for dinner.`;
+// console.log(total_number_of_invited_people);
 /* 21. Think of something you could store in a array. For example, you could
 make a list of mountains, rivers, countries, cities, languages, or anything
 else you’d like. Write a program that creates a list containing these items. */
+// let favorite_things = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+// console.log(favorite_things);
 /* 22. They think of something you could store in a TypeScript Object. Write
 a program that creates Objects containing these items. */
+// let favorite_things_object = {
+//     mountain: 'Mount Everest',
+//     river: 'Amazon river',
+//     country: 'USA',
+//     city: 'New york',
+//     language: 'English US',
+//     fruit: 'Mango'
+// }
+// console.log(favorite_things_object);
 /* 23. Intentional Error: If you haven’t received an array index error in one of
 your programs yet, try to make one happen. Change an index in one of your
 programs to produce an index error. Make sure you correct the error before
 closing the program. */
+// let favorite_things_error = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+// favorite_things_error[]
 /* 24. Conditional Tests: Write a series of conditional tests. Print a
 statement describing each test and your prediction for the results of each
 test. Your code should look something like this:
@@ -251,6 +277,12 @@ evaluates to True or False.
 
 • Create at least 10 tests. Have at least 5 tests evaluate to True and
 another 5 tests evaluate to False. */
+// Array
+var fruits = ['banana', 'mango', 'apple', 'orange'];
+var isfruits_apple = fruits.includes('apple'); //True
+var isfruits_watermalon = fruits.includes('watermalon'); //false
+console.log(isfruits_apple);
+console.log(isfruits_watermalon);
 /* 25. More Conditional Tests: You don’t have to limit the number of tests you
 create to 10. If you want to try more comparisons, write more tests. Have
 at least one True and one False result for each of the following:
