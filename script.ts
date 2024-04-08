@@ -83,13 +83,13 @@ so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
 
 
-let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
-console.log('Original Name List');
-console.log(fullname);
+// let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
+// console.log('Original Name List');
+// console.log(fullname);
 
-let strippedName = fullname.trim();
-console.log('\nStriped Name List');
-console.log(strippedName);
+// let strippedName = fullname.trim();
+// console.log('\nStriped Name List');
+// console.log(strippedName);
 
 
 
@@ -97,7 +97,6 @@ console.log(strippedName);
 /* 7. Number Eight: Write addition, subtraction, multiplication, and 
 division operations that each result in the number 8. Be sure to enclose 
 your operations in print statements to see the results. */
-
 
 // console.log(-(8 + (-16)));     // 8
 // console.log(-(8 - 16));        // 8
@@ -114,7 +113,6 @@ console.log(5 + 3)
 
 Your output should simply be four lines with the number 8 appearing once on 
 each line. */
-
 
 // console.log(5 + 3);
 // console.log(5 + 3);
@@ -151,6 +149,9 @@ describing what the program does. */
 
 // var newDate = new Date();
 
+// let message = `My name is ${myName} and today ${newDate}  is my birthday.`;
+
+// console.log(message);
 
 
 
@@ -246,7 +247,6 @@ have to think of someone else to invite. */
 // for(let i = 0; i < inviteGuest.length; i++) {
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
 //     console.log(invitation);
-    
 // }
 
 
@@ -274,7 +274,6 @@ still in your list. */
 // for(let i = 0; i < inviteGuest.length; i++) {
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
 //     console.log(invitation);
-    
 // }
 
 
@@ -317,19 +316,6 @@ one for each person in your list. */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 18. Shrinking Guest List: You just found out that your new dinner table 
 won’t arrive in time for the dinner, and you have space for only two guests.
 
@@ -348,18 +334,32 @@ Print your list to make sure you actually have an empty list at the end
 of your program. */
 
 
+// let inviteGuest = ['Ali','Umar','Abubakar','Usman','Hamza','Asad'];
+
+// var invitation_only_two_people_message = 'I was invite only two people for dinner.';
+
+// console.log(invitation_only_two_people_message);
 
 
+// let remaining_guest = inviteGuest.slice(2);        
 
+// let invite_two_people = inviteGuest.splice(0,2);
 
+// let remaining_guest_message = 'Sorry I  can\'t invite you to dinner today';
 
+// let invitationMessage = 'I would like to invite you take a dinner today.';
 
+// // invited guest message
+// for(let i = 0; i < invite_two_people.length; i++) {
+//     let invitation = invite_two_people[i] + ' :' + invitationMessage;
+//     console.log(invitation);
+// }
 
-
-
-
-
-
+// // not invited guest
+// for(let j = 0; j < remaining_guest.length; j++) {
+//     let  noInvitation = remaining_guest[j] + ' :' + remaining_guest_message;
+//     console.log(noInvitation);
+// }
 
 
 
@@ -395,8 +395,11 @@ show that its order has been changed.
 Print the list to show that its order has changed. */
 
 
+let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
 
+console.log(favourite_places);
 
+console.log(favourite_places.sort());
 
 
 

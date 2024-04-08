@@ -36,12 +36,12 @@ characters at the beginning and end of the name. Make sure you use each
 character combination, "\t" and "\n", at least once. Print the name once,
 so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
-var fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
-console.log('Original Name List');
-console.log(fullname);
-var strippedName = fullname.trim();
-console.log('\nStriped Name List');
-console.log(strippedName);
+// let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
+// console.log('Original Name List');
+// console.log(fullname);
+// let strippedName = fullname.trim();
+// console.log('\nStriped Name List');
+// console.log(strippedName);
 /* 7. Number Eight: Write addition, subtraction, multiplication, and
 division operations that each result in the number 8. Be sure to enclose
 your operations in print statements to see the results. */
@@ -72,6 +72,8 @@ the current date at the top of each program file. Then write one sentence
 describing what the program does. */
 // var myName = 'Usama';
 // var newDate = new Date();
+// let message = `My name is ${myName} and today ${newDate}  is my birthday.`;
+// console.log(message);
 /* 11. Names: Store the names of a few of your friends in a array called
 names. Print each person’s name by accessing each element in the list, one
 at a time. */
@@ -174,6 +176,23 @@ them know they’re still invited.
 • Remove the last two names from your list, so you have an empty list.
 Print your list to make sure you actually have an empty list at the end
 of your program. */
+// let inviteGuest = ['Ali','Umar','Abubakar','Usman','Hamza','Asad'];
+// var invitation_only_two_people_message = 'I was invite only two people for dinner.';
+// console.log(invitation_only_two_people_message);
+// let remaining_guest = inviteGuest.slice(2);        
+// let invite_two_people = inviteGuest.splice(0,2);
+// let remaining_guest_message = 'Sorry I  can\'t invite you to dinner today';
+// let invitationMessage = 'I would like to invite you take a dinner today.';
+// // invited guest message
+// for(let i = 0; i < invite_two_people.length; i++) {
+//     let invitation = invite_two_people[i] + ' :' + invitationMessage;
+//     console.log(invitation);
+// }
+// // not invited guest
+// for(let j = 0; j < remaining_guest.length; j++) {
+//     let  noInvitation = remaining_guest[j] + ' :' + remaining_guest_message;
+//     console.log(noInvitation);
+// }
 /* 19. Seeing the World: Think of at least five places in the world you’d
 like to visit.
 
@@ -202,6 +221,9 @@ show that its order has been changed.
 
 • Sort to change your array so it’s stored in reverse alphabetical order.
 Print the list to show that its order has changed. */
+var favourite_places = ['toronto', 'paris', 'los angeles', 'california', 'new york', 'london'];
+console.log(favourite_places);
+console.log(favourite_places.sort());
 /* 20. Dinner Guests: Working with one of the programs from Exercises 14
 through 18, print a message indicating the number of people you are inviting
 to dinner. */
