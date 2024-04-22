@@ -7,11 +7,17 @@ Eric, would you like to learn some Python today?”  */
 // ', would you like to learn some python today');
 /* 3. Name Cases: Store a person’s name in a variable, and then print that
 person’s name in lowercase, uppercase, and titlecase. */
-// var personName = 'uSama';
-// var personNameLowerCase = personName.toLowerCase();    // toLowerCase()
-// console.log(personNameLowerCase);
-// var personNameUpperCase = personName.toUpperCase();    // toUpperCase()
-// console.log(personNameUpperCase);
+// var person_name = 'usAmA';
+// var person_nameLowerCase = person_name.toLowerCase();    // toLowerCase()
+// console.log(person_nameLowerCase);
+// var person_nameUpperCase = person_name.toUpperCase();    // toUpperCase()
+// console.log(person_nameUpperCase);
+// var first_letter = person_name[0];                          // title case
+// var first_letter_capital = first_letter.toUpperCase();
+// var remaining_letters = person_name.slice(1);
+// var remaining_letters_lower = remaining_letters.toLocaleLowerCase();
+// var title_case = first_letter_capital + remaining_letters_lower;
+// console.log(title_case);
 /* 4. Famous Quote: Find a quote from a famous person you admire. Print the
 quote and the name of its author. Your output should look something like
 the following, including the quotation marks:
@@ -23,15 +29,15 @@ anything new.” */
 person’s name in a variable called famous_person. Then compose your message
 and store it in a new variable called message. Print your message. */
 // var famous_person = 'Albert Einstein';
-// var message = ': "A person who never made a mistake never tired anything new."';
-// console.log(famous_person + message);
+// var message = famous_person + ' once said, "A person who never made a mistake never tired anything new."';
+// console.log(message);
 /* 6. Stripping Names: Store a person’s name, and include some whitespace
 characters at the beginning and end of the name. Make sure you use each
 character combination, "\t" and "\n", at least once. Print the name once,
 so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
-// var personName ='   Usama'      ;
-// console.log(personName);
+// var personName ='Usama';
+// console.log(`${personName}`);
 /* 7. Number Eight: Write addition, subtraction, multiplication, and
 division operations that each result in the number 8. Be sure to enclose
 your operations in print statements to see the results. */
@@ -138,16 +144,15 @@ end of your program informing people that you found a bigger dinner table.
 • Add one new guest to the middle of your array. • Use append() to add one
 new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
-var inviteGuest = ['Ali', 'Umar', 'Abubakar', 'Usman'];
-// inviteGuest.pop();
-inviteGuest.unshift('Usama'); // first guest
-// inviteGuest.slice(2,2);          // second guest
-inviteGuest.push('Hamza'); // third guest
-var invitationMessage = 'I would like to invite you take a dinner today.';
-for (var i = 0; i < inviteGuest.length; i++) {
-    var invitation = inviteGuest[i] + ' ' + invitationMessage;
-    console.log(invitation);
-}
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+// inviteGuest.unshift('Usama');    // first guest   starts  from zero index
+// inviteGuest.splice(3,0,'Asad');  // second guest  middle of an array
+// inviteGuest.push('Hamza');       // third guest   end of an array
+// var invitationMessage = 'I would like to invite you take a dinner today.';
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+// }
 /* 18. Shrinking Guest List: You just found out that your new dinner table
 won’t arrive in time for the dinner, and you have space for only two guests.
 
@@ -164,6 +169,15 @@ them know they’re still invited.
 • Remove the last two names from your list, so you have an empty list.
 Print your list to make sure you actually have an empty list at the end
 of your program. */
+// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+// var invitationMessage = 'I would like to invite you take a dinner today.';
+// var newMessage = 'this message saying that you can invite only two people for dinner';
+// var two_guest_only = inviteGuest.slice(2);
+// console.log(two_guest_only);
+// for(let i = 0; i < inviteGuest.length; i++) {
+//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
+//     console.log(invitation);
+// }
 /* 19. Seeing the World: Think of at least five places in the world you’d
 like to visit.
 
@@ -192,18 +206,47 @@ show that its order has been changed.
 
 • Sort to change your array so it’s stored in reverse alphabetical order.
 Print the list to show that its order has changed. */
+// var favorite_places = ['Paris','New york','Los angles','Carlifornia','Maldiv'];
+// console.log(favorite_places);
+// favorite_places.sort();       //Sorting the array in alphabetical order
+// console.log(favorite_places);
+// favorite_places.reverse();    //Reversing the order of the array
+// console.log(favorite_places);
 /* 20. Dinner Guests: Working with one of the programs from Exercises 14
 through 18, print a message indicating the number of people you are inviting
 to dinner. */
+// var  numOfGuests = 6;
+// console.log("You are invited to dinner by " +numOfGuests+ " guests.");
 /* 21. Think of something you could store in a array. For example, you could
 make a list of mountains, rivers, countries, cities, languages, or anything
 else you’d like. Write a program that creates a list containing these items. */
+// let someThimgsArray = ['Pakistan','America','London','India','New zealand','Bangladesh'];
+// console.log(someThimgsArray);
 /* 22. They think of something you could store in a TypeScript Object. Write
 a program that creates Objects containing these items. */
+// let someThimgsObject = {
+//     Pakistan: 'Karachi',
+//     America:'Washington DC',
+//     London :'London Bridge is Crossing Soley',
+//     India :'Delhi',
+//     NewZealand :'Auckland',
+//     Bangladesh :'Dhaka'
+// };
+// console.log(someThimgsObject);
 /* 23. Intentional Error: If you haven’t received an array index error in one of
 your programs yet, try to make one happen. Change an index in one of your
 programs to produce an index error. Make sure you correct the error before
 closing the program. */
+// let  myArray = [50,60,70];
+// console.log('Before Index Error');
+// try{
+//     // Intentionally causing Array Index Out Of Bounds Exception
+//     console.log("Element at index [4] is " +myArray[4]);
+// }catch(err){
+//     console.error(`Oops! An error occurred: ${err}`);
+// }finally{
+//     console.log('After Index Error');
+// }
 /* 24. Conditional Tests: Write a series of conditional tests. Print a
 statement describing each test and your prediction for the results of each
 test. Your code should look something like this:
@@ -219,6 +262,22 @@ evaluates to True or False.
 
 • Create at least 10 tests. Have at least 5 tests evaluate to True and
 another 5 tests evaluate to False. */
+// let  x = 10;
+// let y = 5;
+// console.log("Is x > y? I predict True.");
+// console.log(x>y)
+// console.log("Does x equal y? I predict False.");
+// console.log(x==y)
+// console.log("Is x <= y? I predict True.");
+// console.log(x<=y)
+// console.log("Is x != y? I predict True.");
+// console.log(x!=y)
+// console.log("Is x >= y? I predict False.");
+// console.log(x>=y)
+// Additional tests
+// console.log(`If x is ${x} and y is ${y}, then their sum is ${x+y}.`) // true
+// console.log((x + y).toString() === `${x}${y}`)                       // false
+// console.log(`The product of x and y is ${x*y}.`);                
 /* 25. More Conditional Tests: You don’t have to limit the number of tests you
 create to 10. If you want to try more comparisons, write more tests. Have
 at least one True and one False result for each of the following:
@@ -245,6 +304,29 @@ is, print a message that the player just earned 5 points.
 
 • Write one version of this program that passes the if test and another
 that fails. (The version that fails will have no output.) */
+// var  alien_color = 'green';
+// if(alien_color ==='green') {
+//     console.log('You just earned  5 points!');
+// } else {
+// }
+// Alien Colors #2: Now imagine that the player has scored 3 points by shooting down two red aliens. The variable score
+//Testing string comparison functions
+// console.log("Is 'hello' === 'world'? ", ('hello' === 'world')); //False
+// console.log("Is 'hello' != 'world'? ", ('hello' !== 'world')); //True
+//Using the lowercase() method
+// var original_string = "Hello World";
+// var new_string = original_string.toLowerCase();
+// console.log("Original String: "+original_string);
+// console.log("New Lower Case String: "+new_string);
+/*Numerical Comparisons
+Assume we are testing the following variables:
+x = 4;
+y = 7;
+z = 2; */
+// console.log("Is x < y? ",(x<y)); // True
+// console.log("Is x > z? ",(x>z)); // True
+// console.log("Is x <= y ?",(x<=y)); // True
+// console.log("Is x >= z ?",(x>=z)); // False</s>
 /* 26. Alien Colors #2: Choose a color for an alien as you did in Exercise
 25, and write an if-else chain.
 
@@ -256,6 +338,13 @@ earned 10 points.
 
 • Write one version of this program that runs the if block and another that
 runs the else block. */
+// var alienColor = "green";
+// if (alienColor ==="green"){
+//     console.log("You just earned  5 points for shooting the alien.");
+// }
+// else {
+//     console.log("You just earned  10 points.")
+// }
 /* 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an
 if-else chain.
 
@@ -267,6 +356,22 @@ if-else chain.
 
 • Write three versions of this program, making sure each message is printed
 for the appropriate color alien. */
+// let alienColor = prompt('Enter a alien color like green, yellow, red or orange');
+// if(alienColor == 'green') {
+//     console.log('You earn 5 points, b/c you selected green');
+// }
+// else if(alienColor == 'yellow') {
+//     console.log('You earn 10 points, b/c you selected yellow');
+// }
+// else if(alienColor == 'red') {
+//     console.log('You earn 7 points, b/c you selected red');
+// }
+// else if(alienColor == 'orange') {
+//     console.log('You earn 5 points, b/c you selected orange');
+// }
+// else {
+//     console.log('You selected invalid color');
+// }
 /* 28. Stages of Life: Write an if-else chain that determines a person’s stage of
 life. Set a value for the variable age, and then:
 
@@ -287,6 +392,25 @@ that the person is an adult.
 
 • If the person is age 65 or older, print a message that the person is an
 elder. */
+var person_age = 23;
+if (person_age < 2) {
+    console.log('You are a baby');
+}
+else if (person_age >= 2 && person_age < 4) {
+    console.log('You are a toddler');
+}
+else if (person_age >= 4 && person_age < 13) {
+    console.log('You are a kid');
+}
+else if (person_age >= 13 && person_age < 20) {
+    console.log('You are a teeneger');
+}
+else if (person_age >= 20 && person_age < 65) {
+    console.log('You are a adult');
+}
+else if (person_age >= 65) {
+    console.log('You are a elder');
+}
 /* 29. Favorite Fruit: Make a array of your favorite fruits, and then write a
 series of independent if statements that check for certain fruits in your
 array.
@@ -403,13 +527,15 @@ album’s Object. Make at least one new function call that includes the
 number of tracks on an album. */
 /* 41. Magicians: Make a array of magician’s names. Pass the array to a
 function called show_magicians(), which prints the name of each magician
-in the array.
-
-
-
-
-
-
+in the array. */
+// function showMegicians() {
+//     let medicianName = ['abc1','abc2','abc3','abc4','abc5'];
+//     for(let i = 0; i < medicianName.length; i++) {
+//         let medicianNamePartial = medicianName[i];
+//         console.log(medicianNamePartial);
+//     }
+// }
+// showMegicians();
 /* 42. Great Magicians: Start with a copy of your program from Exercise 39. Write
 a function called make_great() that modifies the array of magicians by
 adding the phrase the Great to each magician’s name. Call show_magicians()
