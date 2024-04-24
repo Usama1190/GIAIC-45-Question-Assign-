@@ -1,54 +1,55 @@
-// 1. Install Node.js, TypeScript and VS Code on your computer.
+// Q1. Install Node.js, TypeScript and VS Code on your computer.
 
 
 
 
 
-/* 2. Personal Message: Store a person’s name in a variable, and print a 
+/* Q2. Personal Message: Store a person’s name in a variable, and print a 
 message to that person. Your message should be simple, such as, “Hello 
 Eric, would you like to learn some Python today?”  */
 
 
+// Old Steps
 // var personName = 'Eric';
 // console.log('Hello ' + personName + 
 // ', would you like to learn some python today');
 
+// Advanced Steps
+// let personName = 'Eric';
+// console.log(`Hello ${personName}, would you like to learn some python today`);
 
 
 
 
-/* 3. Name Cases: Store a person’s name in a variable, and then print that 
+/* Q3. Name Cases: Store a person’s name in a variable, and then print that 
 person’s name in lowercase, uppercase, and titlecase. */
 
 
-// var person_name = 'usAmA';
+/* let personName = 'usAmA';
 
-// var person_nameLowerCase = person_name.toLowerCase();    // toLowerCase()
+let personNameLowerCase = personName.toLowerCase();    // toLowerCase()
+console.log(personNameLowerCase);
 
-// console.log(person_nameLowerCase);
+let personNameUpperCase = personName.toUpperCase();    // toUpperCase()
+console.log(personNameUpperCase);
 
-// var person_nameUpperCase = person_name.toUpperCase();    // toUpperCase()
+let firstLetter = personName[0];                          // title case
 
-// console.log(person_nameUpperCase);
+let firstLetterCapital = firstLetter.toUpperCase();
 
-// var first_letter = person_name[0];                          // title case
+let remainingLetters = personName.slice(1);
 
-// var first_letter_capital = first_letter.toUpperCase();
+let remainingLettersLowerCase = remainingLetters.toLocaleLowerCase();
 
-// var remaining_letters = person_name.slice(1);
-
-// var remaining_letters_lower = remaining_letters.toLocaleLowerCase();
-
-// var title_case = first_letter_capital + remaining_letters_lower;
-
-// console.log(title_case);
+let titleCase = firstLetterCapital + remainingLettersLowerCase;
+console.log(titleCase);
+*/
 
 
 
 
 
-
-/* 4. Famous Quote: Find a quote from a famous person you admire. Print the 
+/* Q4. Famous Quote: Find a quote from a famous person you admire. Print the 
 quote and the name of its author. Your output should look something like 
 the following, including the quotation marks:
 
@@ -62,14 +63,14 @@ anything new.” */
 
 
 
-/* 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous 
+/* Q5. Famous Quote 2: Repeat Exercise 4, but this time store the famous 
 person’s name in a variable called famous_person. Then compose your message 
 and store it in a new variable called message. Print your message. */
 
 
-// var famous_person = 'Albert Einstein';
+// let famous_person = 'Albert Einstein';
 
-// var message = famous_person + ' once said, "A person who never made a mistake never tired anything new."';
+// let message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
 
 // console.log(message);
 
@@ -78,30 +79,47 @@ and store it in a new variable called message. Print your message. */
 
 
 
-/* 6. Stripping Names: Store a person’s name, and include some whitespace 
+/* Q6. Stripping Names: Store a person’s name, and include some whitespace 
 characters at the beginning and end of the name. Make sure you use each 
 character combination, "\t" and "\n", at least once. Print the name once, 
 so the whitespace around the name is displayed. Then print the name after 
 striping the white spaces. */
 
 
-// var personName ='Usama';
+/*let personName = "\t Usama Israr \n"; // Storing name with whitespace
 
-// console.log(`${personName}`);
+// Printing name with whitespace
+console.log("Name with whitespace:");
+console.log("'" + personName + "'");
+
+// Stripping whitespace
+let strippedName = personName.trim();
+
+// Printing stripped name
+console.log("\nStripped name:");
+console.log("'" + strippedName + "'");
+*/
 
 
 
 
-
-/* 7. Number Eight: Write addition, subtraction, multiplication, and 
+/* Q7. Number Eight: Write addition, subtraction, multiplication, and 
 division operations that each result in the number 8. Be sure to enclose 
 your operations in print statements to see the results. */
 
 
-// console.log(-(8 + (-16)));     // 8
-// console.log(-(8 - 16));        // 8
-// console.log(8 * 1);            // 8
-// console.log(8 / 2);            // 8
+// Addition
+/*console.log('Addition: 5 + 3 = ', 5 + 3);
+
+// Subtraction
+console.log('Subtraction: 10 - 2 = ', 10 - 2);
+
+// Multiplication
+console.log('Multiplication: 4 * 2 = ', 4 * 2);
+
+// Division
+console.log('Division: 16 / 2 = ', 16 / 2);
+*/
 
 
 
@@ -124,48 +142,86 @@ each line. */
 
 
 
-/* 9. Favorite Number: Store your favorite number in a variable. Then, 
+/* Q9. Favorite Number: Store your favorite number in a variable. Then, 
 using that variable, create a message that reveals your favorite number. 
 Print that message. */
 
 
-// var favoriteNumber = 7;
+/*let favoriteNumber = 7;
 
-// var myMessage = 'My favorite number is: ' + favoriteNumber;
+let myMessage = 'My favorite number is: ' + favoriteNumber;
 
-// console.log(myMessage);
-
-
-
+console.log(myMessage);
+*/
 
 
-/* 10. Adding Comments: Choose two of the programs you’ve written, and add 
+
+
+/* Q10. Adding Comments: Choose two of the programs you’ve written, and add 
 at least one comment to each. If you don’t have anything specific to write 
 because your programs are too simple at this point, just add your name and 
 the current date at the top of each program file. Then write one sentence 
 describing what the program does. */
 
 
-// var myName = 'Usama';
+// First Program
+// Program: Stripping Names
+// Author: Usama Israr Khan
+// Date: 24-04-2024
+// Description: This program stores a person's name with whitespace characters,
+// prints the name with whitespace, and then prints the name after stripping 
+// the whitespace.
 
-// var newDate = new Date();
+/*let personName = "\t Usama \n"; // Storing name with whitespace
+
+// Printing name with whitespace
+console.log("Name with whitespace:");
+console.log("'" + personName + "'");
+
+// Stripping whitespace
+let strippedName = personName.trim();
+
+// Printing stripped name
+console.log("\nStripped name:");
+console.log("'" + strippedName + "'");
+
+
+
+// Second Program
+// Program: Operations Resulting in 8
+// Author: Usama Israr Khan
+// Date: 24-04-2024
+// Description: This program demonstrates addition, subtraction, multiplication, 
+// and division operations that each result in the number 8.
+
+// Addition operation
+console.log("Addition: 5 + 3 = ", 5 + 3);
+
+// Subtraction operation
+console.log("Subtraction: 10 - 2 = ", 10 - 2);
+
+// Multiplication operation
+console.log("Multiplication: 4 * 2 = ", 4 * 2);
+
+// Division operation
+console.log("Division: 16 / 2 = ", 16 / 2);
+*/
 
 
 
 
-
-/* 11. Names: Store the names of a few of your friends in a array called 
+/* Q11. Names: Store the names of a few of your friends in a array called 
 names. Print each person’s name by accessing each element in the list, one 
 at a time. */
 
+/*
+let names: string[] = ['Usama','Hamza','Abdullah','Ali','Usman'];
 
-// var names = ['Umar','Ali','Abubakar','Usman'];
-
-// console.log(names[0]);        // call index number
-// console.log(names[1]);
-// console.log(names[2]);
-// console.log(names[3]);
-
+for(let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+    
+}
+*/
 
 
 
@@ -690,18 +746,18 @@ fruit is in your array. If the fruit is in your array, the if block should
 print a statement, such as You really like bananas! */
 
 
-let favorite_fruits = ['banana','mango','orange','apple','pine apple','graps'];
+// let favorite_fruits = ['banana','mango','orange','apple','pine apple','graps'];
 
-if (favorite_fruits.includes('banana')) {
-    console.log('I like banana');
-}
-else if (favorite_fruits.includes('mango')) {
-    console.log('I like mango');
-}
-else if (favorite_fruits.includes('orange')) {
-    console.log('I like orange');
-}
-else if (favorite_fruits.includes('')) {}
+// if (favorite_fruits.includes('banana')) {
+//     console.log('I like banana');
+// }
+// else if (favorite_fruits.includes('mango')) {
+//     console.log('I like mango');
+// }
+// else if (favorite_fruits.includes('orange')) {
+//     console.log('I like orange');
+// }
+// else if (favorite_fruits.includes('')) {}
 
 
 

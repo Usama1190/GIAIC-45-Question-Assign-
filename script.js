@@ -1,50 +1,81 @@
-// 1. Install Node.js, TypeScript and VS Code on your computer.
-/* 2. Personal Message: Store a person’s name in a variable, and print a
+// Q1. Install Node.js, TypeScript and VS Code on your computer.
+/* Q2. Personal Message: Store a person’s name in a variable, and print a
 message to that person. Your message should be simple, such as, “Hello
 Eric, would you like to learn some Python today?”  */
+// Old Steps
 // var personName = 'Eric';
 // console.log('Hello ' + personName + 
 // ', would you like to learn some python today');
-/* 3. Name Cases: Store a person’s name in a variable, and then print that
+// Advanced Steps
+// let personName = 'Eric';
+// console.log(`Hello ${personName}, would you like to learn some python today`);
+/* Q3. Name Cases: Store a person’s name in a variable, and then print that
 person’s name in lowercase, uppercase, and titlecase. */
-// var person_name = 'usAmA';
-// var person_nameLowerCase = person_name.toLowerCase();    // toLowerCase()
-// console.log(person_nameLowerCase);
-// var person_nameUpperCase = person_name.toUpperCase();    // toUpperCase()
-// console.log(person_nameUpperCase);
-// var first_letter = person_name[0];                          // title case
-// var first_letter_capital = first_letter.toUpperCase();
-// var remaining_letters = person_name.slice(1);
-// var remaining_letters_lower = remaining_letters.toLocaleLowerCase();
-// var title_case = first_letter_capital + remaining_letters_lower;
-// console.log(title_case);
-/* 4. Famous Quote: Find a quote from a famous person you admire. Print the
+/* let personName = 'usAmA';
+
+let personNameLowerCase = personName.toLowerCase();    // toLowerCase()
+console.log(personNameLowerCase);
+
+let personNameUpperCase = personName.toUpperCase();    // toUpperCase()
+console.log(personNameUpperCase);
+
+let firstLetter = personName[0];                          // title case
+
+let firstLetterCapital = firstLetter.toUpperCase();
+
+let remainingLetters = personName.slice(1);
+
+let remainingLettersLowerCase = remainingLetters.toLocaleLowerCase();
+
+let titleCase = firstLetterCapital + remainingLettersLowerCase;
+console.log(titleCase);
+*/
+/* Q4. Famous Quote: Find a quote from a famous person you admire. Print the
 quote and the name of its author. Your output should look something like
 the following, including the quotation marks:
 
 Albert Einstein once said, “A person who never made a mistake never tried
 anything new.” */
 // console.log('Albert Einstein once said, "A person who never made a mistake nerver tired anything new."');
-/* 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous
+/* Q5. Famous Quote 2: Repeat Exercise 4, but this time store the famous
 person’s name in a variable called famous_person. Then compose your message
 and store it in a new variable called message. Print your message. */
-// var famous_person = 'Albert Einstein';
-// var message = famous_person + ' once said, "A person who never made a mistake never tired anything new."';
+// let famous_person = 'Albert Einstein';
+// let message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
 // console.log(message);
-/* 6. Stripping Names: Store a person’s name, and include some whitespace
+/* Q6. Stripping Names: Store a person’s name, and include some whitespace
 characters at the beginning and end of the name. Make sure you use each
 character combination, "\t" and "\n", at least once. Print the name once,
 so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
-// var personName ='Usama';
-// console.log(`${personName}`);
-/* 7. Number Eight: Write addition, subtraction, multiplication, and
+/*let personName = "\t Usama Israr \n"; // Storing name with whitespace
+
+// Printing name with whitespace
+console.log("Name with whitespace:");
+console.log("'" + personName + "'");
+
+// Stripping whitespace
+let strippedName = personName.trim();
+
+// Printing stripped name
+console.log("\nStripped name:");
+console.log("'" + strippedName + "'");
+*/
+/* Q7. Number Eight: Write addition, subtraction, multiplication, and
 division operations that each result in the number 8. Be sure to enclose
 your operations in print statements to see the results. */
-// console.log(-(8 + (-16)));     // 8
-// console.log(-(8 - 16));        // 8
-// console.log(8 * 1);            // 8
-// console.log(8 / 2);            // 8
+// Addition
+/*console.log('Addition: 5 + 3 = ', 5 + 3);
+
+// Subtraction
+console.log('Subtraction: 10 - 2 = ', 10 - 2);
+
+// Multiplication
+console.log('Multiplication: 4 * 2 = ', 4 * 2);
+
+// Division
+console.log('Division: 16 / 2 = ', 16 / 2);
+*/
 /* 8. You should create four lines that look like this:
 
 console.log(5 + 3)
@@ -55,27 +86,68 @@ each line. */
 // console.log(5 + 3);
 // console.log(5 + 3);
 // console.log(5 + 3);
-/* 9. Favorite Number: Store your favorite number in a variable. Then,
+/* Q9. Favorite Number: Store your favorite number in a variable. Then,
 using that variable, create a message that reveals your favorite number.
 Print that message. */
-// var favoriteNumber = 7;
-// var myMessage = 'My favorite number is: ' + favoriteNumber;
-// console.log(myMessage);
-/* 10. Adding Comments: Choose two of the programs you’ve written, and add
+/*let favoriteNumber = 7;
+
+let myMessage = 'My favorite number is: ' + favoriteNumber;
+
+console.log(myMessage);
+*/
+/* Q10. Adding Comments: Choose two of the programs you’ve written, and add
 at least one comment to each. If you don’t have anything specific to write
 because your programs are too simple at this point, just add your name and
 the current date at the top of each program file. Then write one sentence
 describing what the program does. */
-// var myName = 'Usama';
-// var newDate = new Date();
-/* 11. Names: Store the names of a few of your friends in a array called
+// First Program
+// Program: Stripping Names
+// Author: Usama Israr Khan
+// Date: 24-04-2024
+// Description: This program stores a person's name with whitespace characters,
+// prints the name with whitespace, and then prints the name after stripping 
+// the whitespace.
+/*let personName = "\t Usama \n"; // Storing name with whitespace
+
+// Printing name with whitespace
+console.log("Name with whitespace:");
+console.log("'" + personName + "'");
+
+// Stripping whitespace
+let strippedName = personName.trim();
+
+// Printing stripped name
+console.log("\nStripped name:");
+console.log("'" + strippedName + "'");
+
+
+
+// Second Program
+// Program: Operations Resulting in 8
+// Author: Usama Israr Khan
+// Date: 24-04-2024
+// Description: This program demonstrates addition, subtraction, multiplication,
+// and division operations that each result in the number 8.
+
+// Addition operation
+console.log("Addition: 5 + 3 = ", 5 + 3);
+
+// Subtraction operation
+console.log("Subtraction: 10 - 2 = ", 10 - 2);
+
+// Multiplication operation
+console.log("Multiplication: 4 * 2 = ", 4 * 2);
+
+// Division operation
+console.log("Division: 16 / 2 = ", 16 / 2);
+*/
+/* Q11. Names: Store the names of a few of your friends in a array called
 names. Print each person’s name by accessing each element in the list, one
 at a time. */
-// var names = ['Umar','Ali','Abubakar','Usman'];
-// console.log(names[0]);        // call index number
-// console.log(names[1]);
-// console.log(names[2]);
-// console.log(names[3]);
+var names = ['Usama', 'Hamza', 'Abdullah', 'Ali', 'Usman'];
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
 /* 12. Greetings: Start with the array you used in Exercise 11, but instead
 of just printing each person’s name, print a message to them. The text of
 each message should be the same, but each message should be personalized
@@ -392,25 +464,25 @@ that the person is an adult.
 
 • If the person is age 65 or older, print a message that the person is an
 elder. */
-var person_age = 23;
-if (person_age < 2) {
-    console.log('You are a baby');
-}
-else if (person_age >= 2 && person_age < 4) {
-    console.log('You are a toddler');
-}
-else if (person_age >= 4 && person_age < 13) {
-    console.log('You are a kid');
-}
-else if (person_age >= 13 && person_age < 20) {
-    console.log('You are a teeneger');
-}
-else if (person_age >= 20 && person_age < 65) {
-    console.log('You are a adult');
-}
-else if (person_age >= 65) {
-    console.log('You are a elder');
-}
+// let person_age = 23;
+// if(person_age < 2) {
+//     console.log('You are a baby');
+// }
+// else if(person_age >= 2 && person_age < 4) {
+//     console.log('You are a toddler');   
+// }
+// else if(person_age >= 4 && person_age < 13) {
+//     console.log('You are a kid');   
+// }
+// else if(person_age >= 13 && person_age < 20) {
+//     console.log('You are a teeneger');   
+// }
+// else if(person_age >= 20 && person_age < 65) {
+//     console.log('You are a adult');   
+// }
+// else if(person_age >= 65) {
+//     console.log('You are a elder');   
+// }
 /* 29. Favorite Fruit: Make a array of your favorite fruits, and then write a
 series of independent if statements that check for certain fruits in your
 array.
@@ -420,6 +492,17 @@ array.
 • Write five if statements. Each should check whether a certain kind of
 fruit is in your array. If the fruit is in your array, the if block should
 print a statement, such as You really like bananas! */
+// let favorite_fruits = ['banana','mango','orange','apple','pine apple','graps'];
+// if (favorite_fruits.includes('banana')) {
+//     console.log('I like banana');
+// }
+// else if (favorite_fruits.includes('mango')) {
+//     console.log('I like mango');
+// }
+// else if (favorite_fruits.includes('orange')) {
+//     console.log('I like orange');
+// }
+// else if (favorite_fruits.includes('')) {}
 /* 30. Hello Admin: Make a array of five or more usernames, including the
 name 'admin'. Imagine you are writing code that will print a greeting to
 each user after they log in to a website. Loop through the array, and print
