@@ -11,6 +11,7 @@ Eric, would you like to learn some Python today?”  */
 // console.log(`Hello ${personName}, would you like to learn some python today`);
 /* Q3. Name Cases: Store a person’s name in a variable, and then print that
 person’s name in lowercase, uppercase, and titlecase. */
+<<<<<<< HEAD
 /* let personName = 'usAmA';
 
 let personNameLowerCase = personName.toLowerCase();    // toLowerCase()
@@ -31,11 +32,24 @@ let titleCase = firstLetterCapital + remainingLettersLowerCase;
 console.log(titleCase);
 */
 /* Q4. Famous Quote: Find a quote from a famous person you admire. Print the
+=======
+// var personName = 'uSama';
+// var personNameLowerCase = personName.toLowerCase();    // toLowerCase()
+// console.log(personNameLowerCase);
+// var personNameUpperCase = personName.toUpperCase();    // toUpperCase()
+// console.log(personNameUpperCase);
+// var first_letter = personName[0].toUpperCase();           // [0] is the first character of string
+// var remaining_letters = personName.slice(1).toLowerCase();
+// var  personNameTitleCase = first_letter + remaining_letters;
+// console.log(personNameTitleCase);                         // title case 
+/* 4. Famous Quote: Find a quote from a famous person you admire. Print the
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 quote and the name of its author. Your output should look something like
 the following, including the quotation marks:
 
 Albert Einstein once said, “A person who never made a mistake never tried
 anything new.” */
+<<<<<<< HEAD
 // console.log('Albert Einstein once said, "A person who never made a mistake nerver tired anything new."');
 /* Q5. Famous Quote 2: Repeat Exercise 4, but this time store the famous
 person’s name in a variable called famous_person. Then compose your message
@@ -44,10 +58,23 @@ and store it in a new variable called message. Print your message. */
 // let message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
 // console.log(message);
 /* Q6. Stripping Names: Store a person’s name, and include some whitespace
+=======
+// let quoteAuthor = "Albert Einstein";
+// let quoteText = `A person who never made a mistake never tried anything new.`;
+// console.log(`${quoteAuthor} once said, ${quoteText}`);
+/* 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous
+person’s name in a variable called famous_person. Then compose your message
+and store it in a new variable called message. Print your message. */
+// var famous_person = 'Albert Einstein';
+// var message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
+// console.log(message);
+/* 6. Stripping Names: Store a person’s name, and include some whitespace
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 characters at the beginning and end of the name. Make sure you use each
 character combination, "\t" and "\n", at least once. Print the name once,
 so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
+<<<<<<< HEAD
 /*let personName = "\t Usama Israr \n"; // Storing name with whitespace
 
 // Printing name with whitespace
@@ -62,6 +89,15 @@ console.log("\nStripped name:");
 console.log("'" + strippedName + "'");
 */
 /* Q7. Number Eight: Write addition, subtraction, multiplication, and
+=======
+// let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
+// console.log('Original Name List');
+// console.log(fullname);
+// let strippedName = fullname.trim();
+// console.log('\nStriped Name List');
+// console.log(strippedName);
+/* 7. Number Eight: Write addition, subtraction, multiplication, and
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 division operations that each result in the number 8. Be sure to enclose
 your operations in print statements to see the results. */
 // Addition
@@ -100,6 +136,7 @@ at least one comment to each. If you don’t have anything specific to write
 because your programs are too simple at this point, just add your name and
 the current date at the top of each program file. Then write one sentence
 describing what the program does. */
+<<<<<<< HEAD
 // First Program
 // Program: Stripping Names
 // Author: Usama Israr Khan
@@ -142,6 +179,13 @@ console.log("Multiplication: 4 * 2 = ", 4 * 2);
 console.log("Division: 16 / 2 = ", 16 / 2);
 */
 /* Q11. Names: Store the names of a few of your friends in a array called
+=======
+// var myName = 'Usama';
+// var newDate = new Date();
+// let message = `My name is ${myName} and today ${newDate}  is my birthday.`;
+// console.log(message);
+/* 11. Names: Store the names of a few of your friends in a array called
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 names. Print each person’s name by accessing each element in the list, one
 at a time. */
 var names = ['Usama', 'Hamza', 'Abdullah', 'Ali', 'Usman'];
@@ -217,9 +261,16 @@ end of your program informing people that you found a bigger dinner table.
 new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
 // var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+<<<<<<< HEAD
 // inviteGuest.unshift('Usama');    // first guest   starts  from zero index
 // inviteGuest.splice(3,0,'Asad');  // second guest  middle of an array
 // inviteGuest.push('Hamza');       // third guest   end of an array
+=======
+// inviteGuest.pop();
+// inviteGuest.unshift('Usama');    // first guest
+// inviteGuest.slice(2,2);          // second guest
+// inviteGuest.push('Hamza');       // third guest
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 // var invitationMessage = 'I would like to invite you take a dinner today.';
 // for(let i = 0; i < inviteGuest.length; i++) {
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
@@ -241,6 +292,7 @@ them know they’re still invited.
 • Remove the last two names from your list, so you have an empty list.
 Print your list to make sure you actually have an empty list at the end
 of your program. */
+<<<<<<< HEAD
 // var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 // var invitationMessage = 'I would like to invite you take a dinner today.';
 // var newMessage = 'this message saying that you can invite only two people for dinner';
@@ -250,6 +302,25 @@ of your program. */
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
 //     console.log(invitation);
 // }
+=======
+// let inviteGuest = ['Ali','Umar','Abubakar','Usman','Hamza','Asad'];
+// var invitation_only_two_people_message = 'I was invite only two people for dinner.';
+// console.log(invitation_only_two_people_message);
+// let remaining_guest = inviteGuest.slice(2);        
+// let invite_two_people = inviteGuest.splice(0,2);
+// let remaining_guest_message = 'Sorry I  can\'t invite you to dinner today';
+// let invitationMessage = 'I would like to invite you take a dinner today.';
+// // invited guest message
+// for(let i = 0; i < invite_two_people.length; i++) {
+//     let invitation = invite_two_people[i] + ' :' + invitationMessage;
+//     console.log(invitation);
+// }
+// // not invited guest
+// for(let j = 0; j < remaining_guest.length; j++) {
+//     let  noInvitation = remaining_guest[j] + ' :' + remaining_guest_message;
+//     console.log(noInvitation);
+// }
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 /* 19. Seeing the World: Think of at least five places in the world you’d
 like to visit.
 
@@ -278,6 +349,7 @@ show that its order has been changed.
 
 • Sort to change your array so it’s stored in reverse alphabetical order.
 Print the list to show that its order has changed. */
+<<<<<<< HEAD
 // var favorite_places = ['Paris','New york','Los angles','Carlifornia','Maldiv'];
 // console.log(favorite_places);
 // favorite_places.sort();       //Sorting the array in alphabetical order
@@ -305,10 +377,48 @@ a program that creates Objects containing these items. */
 //     Bangladesh :'Dhaka'
 // };
 // console.log(someThimgsObject);
+=======
+// let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
+// console.log(favourite_places);
+// console.log(favourite_places.sort());
+// console.log(favourite_places);
+// let reverse_order = favourite_places.reverse();
+// console.log(reverse_order);
+// let reverse_order_again = reverse_order.reverse();
+// console.log(reverse_order_again);
+// let sorted_array = favourite_places.sort();
+// console.log(sorted_array);
+// let reversed_sorted_array = sorted_array.reverse();
+// console.log(reversed_sorted_array);
+/* 20. Dinner Guests: Working with one of the programs from Exercises 14
+through 18, print a message indicating the number of people you are inviting
+to dinner. */
+// var invitePerson = ['Ali','Umar','Abubakar','Usman','Hamza','Usama','Asad'];
+// let total_number_of_invited_people = 
+// `I have invite ${invitePerson.length} guests for dinner.`;
+// console.log(total_number_of_invited_people);
+/* 21. Think of something you could store in a array. For example, you could
+make a list of mountains, rivers, countries, cities, languages, or anything
+else you’d like. Write a program that creates a list containing these items. */
+// let favorite_things = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+// console.log(favorite_things);
+/* 22. They think of something you could store in a TypeScript Object. Write
+a program that creates Objects containing these items. */
+// let favorite_things_object = {
+//     mountain: 'Mount Everest',
+//     river: 'Amazon river',
+//     country: 'USA',
+//     city: 'New york',
+//     language: 'English US',
+//     fruit: 'Mango'
+// }
+// console.log(favorite_things_object);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 /* 23. Intentional Error: If you haven’t received an array index error in one of
 your programs yet, try to make one happen. Change an index in one of your
 programs to produce an index error. Make sure you correct the error before
 closing the program. */
+<<<<<<< HEAD
 // let  myArray = [50,60,70];
 // console.log('Before Index Error');
 // try{
@@ -319,6 +429,10 @@ closing the program. */
 // }finally{
 //     console.log('After Index Error');
 // }
+=======
+// let favorite_things_error = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+// favorite_things_error[]
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 /* 24. Conditional Tests: Write a series of conditional tests. Print a
 statement describing each test and your prediction for the results of each
 test. Your code should look something like this:
@@ -334,6 +448,7 @@ evaluates to True or False.
 
 • Create at least 10 tests. Have at least 5 tests evaluate to True and
 another 5 tests evaluate to False. */
+<<<<<<< HEAD
 // let  x = 10;
 // let y = 5;
 // console.log("Is x > y? I predict True.");
@@ -350,6 +465,14 @@ another 5 tests evaluate to False. */
 // console.log(`If x is ${x} and y is ${y}, then their sum is ${x+y}.`) // true
 // console.log((x + y).toString() === `${x}${y}`)                       // false
 // console.log(`The product of x and y is ${x*y}.`);                
+=======
+// Array
+var fruits = ['banana', 'mango', 'apple', 'orange'];
+var isfruits_apple = fruits.includes('apple'); //True
+var isfruits_watermalon = fruits.includes('watermalon'); //false
+console.log(isfruits_apple);
+console.log(isfruits_watermalon);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 /* 25. More Conditional Tests: You don’t have to limit the number of tests you
 create to 10. If you want to try more comparisons, write more tests. Have
 at least one True and one False result for each of the following:

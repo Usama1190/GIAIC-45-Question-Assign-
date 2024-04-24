@@ -45,6 +45,14 @@ let titleCase = firstLetterCapital + remainingLettersLowerCase;
 console.log(titleCase);
 */
 
+// var first_letter = personName[0].toUpperCase();           // [0] is the first character of string
+
+// var remaining_letters = personName.slice(1).toLowerCase();
+
+// var  personNameTitleCase = first_letter + remaining_letters;
+
+// console.log(personNameTitleCase);                         // title case 
+
 
 
 
@@ -56,8 +64,11 @@ the following, including the quotation marks:
 Albert Einstein once said, “A person who never made a mistake never tried 
 anything new.” */
 
+// let quoteAuthor = "Albert Einstein";
 
-// console.log('Albert Einstein once said, "A person who never made a mistake nerver tired anything new."');
+// let quoteText = `A person who never made a mistake never tried anything new.`;
+
+// console.log(`${quoteAuthor} once said, ${quoteText}`);
 
 
 
@@ -70,7 +81,11 @@ and store it in a new variable called message. Print your message. */
 
 // let famous_person = 'Albert Einstein';
 
+<<<<<<< HEAD
 // let message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
+=======
+// var message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 // console.log(message);
 
@@ -86,6 +101,7 @@ so the whitespace around the name is displayed. Then print the name after
 striping the white spaces. */
 
 
+<<<<<<< HEAD
 /*let personName = "\t Usama Israr \n"; // Storing name with whitespace
 
 // Printing name with whitespace
@@ -99,7 +115,15 @@ let strippedName = personName.trim();
 console.log("\nStripped name:");
 console.log("'" + strippedName + "'");
 */
+=======
+// let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
+// console.log('Original Name List');
+// console.log(fullname);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
+// let strippedName = fullname.trim();
+// console.log('\nStriped Name List');
+// console.log(strippedName);
 
 
 
@@ -107,6 +131,7 @@ console.log("'" + strippedName + "'");
 division operations that each result in the number 8. Be sure to enclose 
 your operations in print statements to see the results. */
 
+<<<<<<< HEAD
 
 // Addition
 /*console.log('Addition: 5 + 3 = ', 5 + 3);
@@ -120,6 +145,12 @@ console.log('Multiplication: 4 * 2 = ', 4 * 2);
 // Division
 console.log('Division: 16 / 2 = ', 16 / 2);
 */
+=======
+// console.log(-(8 + (-16)));     // 8
+// console.log(-(8 - 16));        // 8
+// console.log(8 * 1);            // 8
+// console.log(8 / 2);            // 8
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 
 
@@ -131,7 +162,6 @@ console.log(5 + 3)
 
 Your output should simply be four lines with the number 8 appearing once on 
 each line. */
-
 
 // console.log(5 + 3);
 // console.log(5 + 3);
@@ -207,6 +237,9 @@ console.log("Multiplication: 4 * 2 = ", 4 * 2);
 console.log("Division: 16 / 2 = ", 16 / 2);
 */
 
+// let message = `My name is ${myName} and today ${newDate}  is my birthday.`;
+
+// console.log(message);
 
 
 
@@ -328,7 +361,6 @@ still in your list. */
 // for(let i = 0; i < inviteGuest.length; i++) {
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
 //     console.log(invitation);
-    
 // }
 
 
@@ -351,17 +383,31 @@ one for each person in your list. */
 
 // var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 
+<<<<<<< HEAD
 // inviteGuest.unshift('Usama');    // first guest   starts  from zero index
 
 // inviteGuest.splice(3,0,'Asad');  // second guest  middle of an array
 
 // inviteGuest.push('Hamza');       // third guest   end of an array
+=======
+// inviteGuest.pop();
+
+// inviteGuest.unshift('Usama');    // first guest
+
+// inviteGuest.slice(2,2);          // second guest
+
+// inviteGuest.push('Hamza');       // third guest
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 // var invitationMessage = 'I would like to invite you take a dinner today.';
 
 // for(let i = 0; i < inviteGuest.length; i++) {
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
 //     console.log(invitation);
+<<<<<<< HEAD
+=======
+    
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 // }
 
 
@@ -386,6 +432,7 @@ Print your list to make sure you actually have an empty list at the end
 of your program. */
 
 
+<<<<<<< HEAD
 // var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
 
 // var invitationMessage = 'I would like to invite you take a dinner today.';
@@ -401,6 +448,34 @@ of your program. */
 //     let invitation = inviteGuest[i] + ' ' + invitationMessage;
 //     console.log(invitation);
 // }
+=======
+// let inviteGuest = ['Ali','Umar','Abubakar','Usman','Hamza','Asad'];
+
+// var invitation_only_two_people_message = 'I was invite only two people for dinner.';
+
+// console.log(invitation_only_two_people_message);
+
+
+// let remaining_guest = inviteGuest.slice(2);        
+
+// let invite_two_people = inviteGuest.splice(0,2);
+
+// let remaining_guest_message = 'Sorry I  can\'t invite you to dinner today';
+
+// let invitationMessage = 'I would like to invite you take a dinner today.';
+
+// // invited guest message
+// for(let i = 0; i < invite_two_people.length; i++) {
+//     let invitation = invite_two_people[i] + ' :' + invitationMessage;
+//     console.log(invitation);
+// }
+
+// // not invited guest
+// for(let j = 0; j < remaining_guest.length; j++) {
+//     let  noInvitation = remaining_guest[j] + ' :' + remaining_guest_message;
+//     console.log(noInvitation);
+// }
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 
 
@@ -436,6 +511,7 @@ show that its order has been changed.
 Print the list to show that its order has changed. */
 
 
+<<<<<<< HEAD
 // var favorite_places = ['Paris','New york','Los angles','Carlifornia','Maldiv'];
 
 // console.log(favorite_places);
@@ -448,10 +524,31 @@ Print the list to show that its order has changed. */
 
 // console.log(favorite_places);
 
+=======
+// let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
+// console.log(favourite_places);
 
+// console.log(favourite_places.sort());
 
+// console.log(favourite_places);
 
+// let reverse_order = favourite_places.reverse();
+
+// console.log(reverse_order);
+
+// let reverse_order_again = reverse_order.reverse();
+
+// console.log(reverse_order_again);
+
+// let sorted_array = favourite_places.sort();
+
+// console.log(sorted_array);
+
+// let reversed_sorted_array = sorted_array.reverse();
+
+// console.log(reversed_sorted_array);
 
 
 
@@ -461,9 +558,17 @@ Print the list to show that its order has changed. */
 through 18, print a message indicating the number of people you are inviting 
 to dinner. */
 
+// var invitePerson = ['Ali','Umar','Abubakar','Usman','Hamza','Usama','Asad'];
 
+<<<<<<< HEAD
 // var  numOfGuests = 6;
 // console.log("You are invited to dinner by " +numOfGuests+ " guests.");
+=======
+// let total_number_of_invited_people = 
+// `I have invite ${invitePerson.length} guests for dinner.`;
+
+// console.log(total_number_of_invited_people);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 
 
@@ -474,8 +579,14 @@ make a list of mountains, rivers, countries, cities, languages, or anything
 else you’d like. Write a program that creates a list containing these items. */
 
 
+<<<<<<< HEAD
 // let someThimgsArray = ['Pakistan','America','London','India','New zealand','Bangladesh'];
 // console.log(someThimgsArray);
+=======
+// let favorite_things = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+
+// console.log(favorite_things);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 
 
@@ -485,6 +596,7 @@ else you’d like. Write a program that creates a list containing these items. *
 a program that creates Objects containing these items. */
 
 
+<<<<<<< HEAD
 // let someThimgsObject = {
 //     Pakistan: 'Karachi',
 //     America:'Washington DC',
@@ -495,6 +607,18 @@ a program that creates Objects containing these items. */
 // };
 
 // console.log(someThimgsObject);
+=======
+// let favorite_things_object = {
+//     mountain: 'Mount Everest',
+//     river: 'Amazon river',
+//     country: 'USA',
+//     city: 'New york',
+//     language: 'English US',
+//     fruit: 'Mango'
+// }
+
+// console.log(favorite_things_object);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 
 
@@ -506,6 +630,7 @@ programs to produce an index error. Make sure you correct the error before
 closing the program. */
 
 
+<<<<<<< HEAD
 // let  myArray = [50,60,70];
 // console.log('Before Index Error');
 // try{
@@ -516,6 +641,11 @@ closing the program. */
 // }finally{
 //     console.log('After Index Error');
 // }
+=======
+// let favorite_things_error = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+
+// favorite_things_error[]
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 
 
@@ -538,6 +668,7 @@ evaluates to True or False.
 another 5 tests evaluate to False. */
 
 
+<<<<<<< HEAD
 // let  x = 10;
 // let y = 5;
 
@@ -546,6 +677,18 @@ another 5 tests evaluate to False. */
 
 // console.log("Does x equal y? I predict False.");
 // console.log(x==y)
+=======
+// Array
+let fruits = ['banana','mango','apple','orange'];
+
+let isfruits_apple = fruits.includes('apple');             //True
+
+let isfruits_watermalon = fruits.includes('watermalon');   //false
+
+console.log(isfruits_apple);
+
+console.log(isfruits_watermalon);
+>>>>>>> a5aed24000eb378c40f84e73db8175207c1d9e03
 
 // console.log("Is x <= y? I predict True.");
 // console.log(x<=y)
