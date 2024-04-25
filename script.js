@@ -210,14 +210,19 @@ invitePerson.forEach( person => {
 /* Q15. Changing Guest List: You just heard that one of your guests can’t
 make the dinner, so you need to send out a new set of invitations. You’ll
 have to think of someone else to invite. */
-var inviteGuest = ['Asad', 'Umar', 'Hamza', 'Ali'];
+/*
+let inviteGuest = ['Asad','Umar','Hamza','Ali'];
+
 // Remove a guest who can't make it and add a new guest
 inviteGuest.pop();
 inviteGuest.push('Hamza');
-inviteGuest.forEach(function (guest) {
-    console.log("Dear ".concat(guest, ", I would like to invite you to dinner"));
-});
-/* 16. • Start with your program from Exercise 14. Add a print statement at
+
+inviteGuest.forEach( guest => {
+    console.log(`Dear ${guest}, I would like to invite you to dinner`);
+    
+})
+*/
+/* Q16. • Start with your program from Exercise 14. Add a print statement at
 the end of your program stating the name of the guest who can’t make it.
 
 • Modify your list, replacing the name of the guest who can’t make it with
@@ -225,15 +230,32 @@ the name of the new person you are inviting.
 
 • Print a second set of invitation messages, one for each person who is
 still in your list. */
-// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
-// inviteGuest.pop();
-// inviteGuest.push('Hamza');
-// var invitationMessage = 'I would like to invite you take a dinner today.';
-// for(let i = 0; i < inviteGuest.length; i++) {
-//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
-//     console.log(invitation);
-// }
-/* 17. More Guests: You just found a bigger dinner table, so now more space
+/*
+// original list
+let inviteGuest = ['Asad','Umar','Hamza','Ali'];
+
+function invitationMessage(guest: string) {
+    console.log(`Dear ${guest}, I would like to invite you to dinner`);
+    
+}
+
+inviteGuest.forEach( guest => {
+    invitationMessage(guest);
+    
+})
+
+const notComing = 'Hamza';
+const newGuest = 'Usman';
+
+console.log(`Unfortunately ${notComing} can't make it to dinner`);
+
+inviteGuest = inviteGuest.map( (guest) => ( guest === notComing ? newGuest: guest));
+
+inviteGuest.forEach( guest => {
+    invitationMessage(guest);
+})
+*/
+/* Q17. More Guests: You just found a bigger dinner table, so now more space
 is available. Think of three more guests to invite to dinner.
 
 • Start with your program from Exercise 15. Add a print statement to the
@@ -244,18 +266,34 @@ end of your program informing people that you found a bigger dinner table.
 • Add one new guest to the middle of your array. • Use append() to add one
 new guest to the end of your list. • Print a new set of invitation messages,
 one for each person in your list. */
-// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
-// inviteGuest.unshift('Usama');    // first guest   starts  from zero index
-// inviteGuest.splice(3,0,'Asad');  // second guest  middle of an array
-// inviteGuest.push('Hamza');       // third guest   end of an array
-// inviteGuest.pop();
-// inviteGuest.unshift('Usama');    // first guest
-// inviteGuest.slice(2,2);          // second guest
-// inviteGuest.push('Hamza');       // third 
-// var invitationMessage = 'I would like to invite you take a dinner today.';
-// for(let i = 0; i < inviteGuest.length; i++) {
-//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
-//     console.log(invitation);// }
+/*
+let inviteGuest = ['Asad','Umar','Hamza','Ali'];
+
+function invitationMessage(guest) {
+    console.log(`Dear ${guest}, I would like to invite you to take a dinner.`);
+    
+}
+
+const notComing = 'Umar';
+const newGuest = 'Usman';
+
+inviteGuest = inviteGuest.map( (guest) => ( guest === notComing ? newGuest : guest));
+
+
+inviteGuest.forEach(guest => {
+    invitationMessage(guest);
+})
+
+inviteGuest.unshift('Hassan');       // first guest   starts  from zero index
+
+inviteGuest.splice(3,0,'Ahsan');     // second guest  middle of an array
+
+inviteGuest.push('Usama');           // third guest   end of an array
+
+inviteGuest.forEach(guest => {
+    invitationMessage(guest);
+})
+*/
 /* 18. Shrinking Guest List: You just found out that your new dinner table
 won’t arrive in time for the dinner, and you have space for only two guests.
 
@@ -271,37 +309,38 @@ them know they’re still invited.
 
 • Remove the last two names from your list, so you have an empty list.
 Print your list to make sure you actually have an empty list at the end
-of your program. */
-// Print your list to make sure you actually have an empty list at the end 
-// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
-// var invitationMessage = 'I would like to invite you take a dinner today.';
-// var newMessage = 'this message saying that you can invite only two people for dinner';
-// var two_guest_only = inviteGuest.slice(2);
-// console.log(two_guest_only);
-// for(let i = 0; i < inviteGuest.length; i++) {
-//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
-//     console.log(invitation);
-// }
-// for(let i = 0; i < inviteGuest.length; i++) {
-// let inviteGuest = ['Ali','Umar','Abubakar','Usman','Hamza','Asad'];
-// var invitation_only_two_people_message = 'I was invite only two people for dinner.';
-// console.log(invitation_only_two_people_message);
-// let remaining_guest = inviteGuest.slice(2);        
-// let invite_two_people = inviteGuest.splice(0,2);
-// let remaining_guest_message = 'Sorry I  can\'t invite you to dinner today';
-// let invitationMessage = 'I would like to invite you take a dinner today.';
-// // invited guest message
-// for(let i = 0; i < invite_two_people.length; i++) {
-//     let invitation = invite_two_people[i] + ' :' + invitationMessage;
-//     console.log(invitation);
-// }
-// // not invited guest
-// for(let j = 0; j < remaining_guest.length; j++) {
-//     let  noInvitation = remaining_guest[j] + ' :' + remaining_guest_message;
-//     console.log(noInvitation);
-// // not invited guest
-// }
-//     let  noInvitation = remaining_guest[j] + ' :' + remaining_guest_message;
+of your program.
+
+
+/Print your list to make sure you actually have an empty list at the end */
+/*
+let inviteGuest = ['Asad','Umar','Hamza','Ali'];
+
+function invitationMessage(guest) {
+    console.log(`Dear ${guest}, I would like to invite you to dinner`);
+    
+}
+
+inviteGuest.forEach( guest => {
+    invitationMessage(guest);
+})
+
+// console.log("Unfortunately, the new dinner table won't arrive in time, so I can only invite two people for dinner");
+
+
+while(inviteGuest.length > 2) {
+    const removedGuest = inviteGuest.pop();
+    console.log(`Sorry ${removedGuest}, I'm unable to invite you to dinner.`);
+    
+}
+
+console.log(`${inviteGuest[0]} and ${inviteGuest[1]}, you're still invited to dinner!`);
+
+inviteGuest.pop();
+inviteGuest.pop();
+
+console.log(inviteGuest);
+*/
 /* 19. Seeing the World: Think of at least five places in the world you’d
 like to visit.
 
@@ -329,99 +368,79 @@ its original order.
 show that its order has been changed.
 
 • Sort to change your array so it’s stored in reverse alphabetical order.
-Print the list to show that its order has changed. */
-// • Sort to change your array so it’s stored in reverse alphabetical order. 
-// var favorite_places = ['Paris','New york','Los angles','Carlifornia','Maldiv'];
-// console.log(favorite_places);
-// favorite_places.sort();       //Sorting the array in alphabetical order
-// console.log(favorite_places);
-// favorite_places.reverse();    //Reversing the order of the array
-// console.log(favorite_places);
-// favorite_places.reverse();    //Reversing the order of the array
-// let favourite_places = ['toronto','paris','los angeles','california','new york','london'];
-// console.log(favorite_places);
-// console.log(favourite_places);
-// console.log(favourite_places.sort());
-// console.log(favourite_places);
-// let reverse_order = favourite_places.reverse();
-// console.log(reverse_order);
-// let reverse_order_again = reverse_order.reverse();
-// console.log(reverse_order_again);
-// let sorted_array = favourite_places.sort();
-// console.log(sorted_array);
-// let reversed_sorted_array = sorted_array.reverse();
-// console.log(reversed_sorted_array);
+Print the list to show that its order has changed.
+
+• Sort to change your array so it’s stored in reverse alphabetical order. */
+/*
+let favorite_places = ['Toronto','Paris','New york','Los angles','Carlifornia','Maldiv'];
+
+console.log('Original array ', favorite_places);
+
+console.log('Alphabetical order ', [...favorite_places].sort()); //Sorting the array in alphabetical order
+
+console.log('still original order ', favorite_places);      // original order
+
+console.log('Reverse order ', [...favorite_places].sort().reverse());   //Reversing the order of the array
+
+console.log('Still original order ', favorite_places);
+
+console.log('Changed array reverse order', favorite_places.reverse());   //Reversing the order of the array
+
+console.log('Again reverse, back original order ', favorite_places.reverse());  //Reversing the order of the array
+
+console.log('changed array, Sorted order ', favorite_places.sort());
+
+console.log('Sorted and reverse order ', favorite_places.sort().reverse());
+*/
 /* 20. Dinner Guests: Working with one of the programs from Exercises 14
 through 18, print a message indicating the number of people you are inviting
 to dinner. */
-/* 20. Dinner Guests: Working with one of the programs from Exercises 14
-through 18, print a message indicating the number of people you are inviting
-// let total_number_of_invited_people =
-// `I have invite ${invitePerson.length} guests for dinner.`;
+/*
+let invitePerson = ['Asad','Hamza','Ali','Hassan'];
 
-// console.log(total_number_of_invited_people);
-// let total_number_of_invited_people =
-
-
-
-
-
+console.log(`${invitePerson.length} peoples are invited for dinner`);
+*/
 /* 21. Think of something you could store in a array. For example, you could
 make a list of mountains, rivers, countries, cities, languages, or anything
-else you’d like. Write a program that creates a list containing these items. */
-// make a list of mountains, rivers, countries, cities, languages, or anything 
-// let someThimgsArray = ['Pakistan','America','London','India','New zealand','Bangladesh'];
-// console.log(someThimgsArray);
-// let favorite_things = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
-// console.log(favorite_things);
+else you’d like. Write a program that creates a list containing these items.
+
+
+make a list of mountains, rivers, countries, cities, languages, or anything */
+/*
+let favorite_things = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
+
+console.log(favorite_things);
+*/
 /* 22. They think of something you could store in a TypeScript Object. Write
 a program that creates Objects containing these items. */
-/* 22. They think of something you could store in a TypeScript Object. Write
-// let someThimgsObject = {
-//     Pakistan: 'Karachi',
-//     America:'Washington DC',
-//     London :'London Bridge is Crossing Soley',
-//     India :'Delhi',
-//     NewZealand :'Auckland',
-//     Bangladesh :'Dhaka'
-// };
+/*
+let favorite_things_object = {
+    mountain: 'Mount Everest',
+    river: 'Amazon river',
+    country: 'USA',
+    city: 'New york',
+    language: 'English US',
+    fruit: 'Mango'
+}
 
-//     NewZealand :'Auckland',
-// console.log(someThimgsObject);
-// };
-// let favorite_things_object = {
-//     mountain: 'Mount Everest',
-//     river: 'Amazon river',
-//     country: 'USA',
-//     city: 'New york',
-//     language: 'English US',
-//     fruit: 'Mango'
-// }
-
-// console.log(favorite_things_object);
-//     fruit: 'Mango'
-
-
-
-
-
+console.log(favorite_things_object);
+*/
 /* 23. Intentional Error: If you haven’t received an array index error in one of
 your programs yet, try to make one happen. Change an index in one of your
 programs to produce an index error. Make sure you correct the error before
 closing the program. */
-// programs to produce an index error. Make sure you correct the error before 
-// let  myArray = [50,60,70];
-// console.log('Before Index Error');
-// try{
-//     // Intentionally causing Array Index Out Of Bounds Exception
-//     console.log("Element at index [4] is " +myArray[4]);
-// }catch(err){
-//     console.error(`Oops! An error occurred: ${err}`);
-// }finally{
-//     console.log("Element at index [4] is " +myArray[4]);
-// let favorite_things_error = ['Mount Everest','Amazon river','USA','New york','English US','Mango'];
-// favorite_things_error[]
-//     console.log('After Index Error');/
+var myArray = [50, 60, 70];
+console.log('Before Index Error');
+try {
+    // Intentionally causing Array Index Out Of Bounds Exception
+    console.log("Element at index [4] is " + myArray[4]);
+}
+catch (err) {
+    console.error("Oops! An error occurred: ".concat(err));
+}
+finally {
+    console.log("Element at index [4] is " + myArray[4]);
+}
 /* 24. Conditional Tests: Write a series of conditional tests. Print a
 statement describing each test and your prediction for the results of each
 test. Your code should look something like this:
