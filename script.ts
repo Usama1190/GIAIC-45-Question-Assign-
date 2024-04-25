@@ -8,16 +8,18 @@
 message to that person. Your message should be simple, such as, “Hello 
 Eric, would you like to learn some Python today?”  */
 
-
+/*
 // Old Steps
-// var personName = 'Eric';
-// console.log('Hello ' + personName + 
-// ', would you like to learn some python today');
+var personName = 'Eric';
+console.log('Hello ' + personName + 
+', would you like to learn some python today');
+*/
 
+/*
 // Advanced Steps
-// let personName = 'Eric';
-// console.log(`Hello ${personName}, would you like to learn some python today`);
-
+let personName = 'Eric';
+console.log(`Hello ${personName}, would you like to learn some python today`);
+*/
 
 
 
@@ -33,7 +35,7 @@ console.log(personNameLowerCase);
 let personNameUpperCase = personName.toUpperCase();    // toUpperCase()
 console.log(personNameUpperCase);
 
-let firstLetter = personName[0];                          // title case
+let firstLetter = personName[0];                       // title case
 
 let firstLetterCapital = firstLetter.toUpperCase();
 
@@ -44,14 +46,6 @@ let remainingLettersLowerCase = remainingLetters.toLocaleLowerCase();
 let titleCase = firstLetterCapital + remainingLettersLowerCase;
 console.log(titleCase);
 */
-
-// var first_letter = personName[0].toUpperCase();           // [0] is the first character of string
-
-// var remaining_letters = personName.slice(1).toLowerCase();
-
-// var  personNameTitleCase = first_letter + remaining_letters;
-
-// console.log(personNameTitleCase);                         // title case 
 
 
 
@@ -78,17 +72,13 @@ anything new.” */
 person’s name in a variable called famous_person. Then compose your message 
 and store it in a new variable called message. Print your message. */
 
+/*
+let famous_person = 'Albert Einstein';
 
-// let famous_person = 'Albert Einstein';
+let message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
 
-
-// let message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
-
-// var message = `${famous_person} once said, "A person who never made a mistake never tired anything new."`;
-
-
-// console.log(message);
-
+console.log(message);
+*/
 
 
 
@@ -98,8 +88,11 @@ and store it in a new variable called message. Print your message. */
 characters at the beginning and end of the name. Make sure you use each 
 character combination, "\t" and "\n", at least once. Print the name once, 
 so the whitespace around the name is displayed. Then print the name after 
-striping the white spaces. *
-/*let personName = "\t Usama Israr \n"; // Storing name with whitespace
+striping the white spaces. */
+
+
+/*
+let personName = "\t Usama Israr \n"; // Storing name with whitespace
 
 // Printing name with whitespace
 console.log("Name with whitespace:");
@@ -111,13 +104,8 @@ let strippedName = personName.trim();
 // Printing stripped name
 console.log("\nStripped name:");
 console.log("'" + strippedName + "'")
-// let  fullname = '\t\tJohn Doe \n\rJane Smith\n\n\tTom Brown';
-// console.log('Original Name List');
-// console.log(fullname)
+*/
 
-// let strippedName = fullname.trim();
-// console.log('\nStriped Name List');
-// console.log(strippedName);
 
 
 
@@ -126,9 +114,9 @@ division operations that each result in the number 8. Be sure to enclose
 your operations in print statements to see the results. */
 
 
-
+/*
 // Addition
-/*console.log('Addition: 5 + 3 = ', 5 + 3);
+console.log('Addition: 5 + 3 = ', 5 + 3);
 
 // Subtraction
 console.log('Subtraction: 10 - 2 = ', 10 - 2);
@@ -140,13 +128,6 @@ console.log('Multiplication: 4 * 2 = ', 4 * 2);
 console.log('Division: 16 / 2 = ', 16 / 2);
 */
 
-// console.log(-(8 + (-16))    // 8
-// console.log(-(8 - 16));        // 8
-// console.log(8 * 1);            // 8
-// console.log(8 / 2);            // 8
-
-
-
 
 
 
@@ -157,10 +138,13 @@ console.log(5 + 3)
 Your output should simply be four lines with the number 8 appearing once on 
 each line. */
 
-// console.log(5 + 3);
-// console.log(5 + 3);
-// console.log(5 + 3);
-// console.log(5 + 3);
+
+/*
+console.log(5 + 3);
+console.log(5 + 3);
+console.log(5 + 3);
+console.log(5 + 3);
+*/
 
 
 
@@ -170,8 +154,8 @@ each line. */
 using that variable, create a message that reveals your favorite number. 
 Print that message. */
 
-
-/*let favoriteNumber = 7;
+/*
+let favoriteNumber = 7;
 
 let myMessage = 'My favorite number is: ' + favoriteNumber;
 
@@ -188,15 +172,18 @@ the current date at the top of each program file. Then write one sentence
 describing what the program does. */
 
 
-// First Program
-// Program: Stripping Names
-// Author: Usama Israr Khan
-// Date: 24-04-2024
-// Description: This program stores a person's name with whitespace characters,
-// prints the name with whitespace, and then prints the name after stripping 
-// the whitespace.
+/*
+First Program
+Program: Stripping Names
+Author: Usama Israr Khan
+Date: 24-04-2024
+Description: This program stores a person's name with whitespace characters,
+prints the name with whitespace, and then prints the name after stripping 
+the whitespace.
+*/
 
-/*let personName = "\t Usama \n"; // Storing name with whitespace
+/*
+let personName = "\t Usama \n"; // Storing name with whitespace
 
 // Printing name with whitespace
 console.log("Name with whitespace:");
@@ -231,9 +218,7 @@ console.log("Multiplication: 4 * 2 = ", 4 * 2);
 console.log("Division: 16 / 2 = ", 16 / 2);
 */
 
-// let message = `My name is ${myName} and today ${newDate}  is my birthday.`;
 
-// console.log(message);
 
 
 
@@ -275,15 +260,16 @@ as a motorcycle or a car, and make a list that stores several examples.
 Use your list to print a series of statements about these items, such as 
 “I would like to own a Honda motorcycle.” */
 
+
 /*
 // Define an array of favorite modes of transportation
 const favoriteTransportation: string[] = ["Tesla Model S", "Honda CBR1000RR", "Vespa Primavera", "Toyota Tacoma"];
 
-// var my_favorite_mode_transportation = 'Motorcycle';
-
-// var vehiclesStatement = ['I would like to own a Honda motorcycle.','','',''];
-
-// console.log(my_favorite_mode_transportation + ' ' + vehiclesStatement[0]);
+favoriteTransportation.forEach( transport => {
+    console.log(`I would like to own a ${transport}`);
+    
+})
+*/
 
 
 
@@ -294,36 +280,46 @@ dinner, who would you invite? Make a list that includes at least three
 people you’d like to invite to dinner. Then use your list to print a 
 message to each person, inviting them to dinner. */
 
+/*
+let invitePerson = ['Asad','Hamza','Ali','Hassan'];
 
-// var invitePerson = ['Ali','Umar','Abubakar','Usman'];
-
-// var message = 'I would like to invite you take a dinner today.';
-
-// for(var i = 0; i < invitePerson.length; i++) {
-//     var inviteMessage = invitePerson[i] + ' ' + message;
-//     console.log(inviteMessage);
-// }
-
+invitePerson.forEach( person => {
+    console.log(`Dear ${person}, I would like to invite you to dinner`);
+    
+})
+*/
 
 
 
 
-/* 15. Changing Guest List: You just heard that one of your guests can’t 
+/* Q15. Changing Guest List: You just heard that one of your guests can’t 
 make the dinner, so you need to send out a new set of invitations. You’ll 
 have to think of someone else to invite. */
 
-// var inviteGuest = ['Ali','Umar','Abubakar','Usman'];
+/*
+let inviteGuest = ['Asad','Umar','Hamza','Ali'];
 
-// inviteGuest.pop();
+// Remove a guest who can't make it and add a new guest
+inviteGuest.pop();
+inviteGuest.push('Hamza');
 
-// inviteGuest.push('Hamza');
+inviteGuest.forEach( guest => {
+    console.log(`Dear ${guest}, I would like to invite you to dinner`);
+    
+})
+*/
 
-// var invitationMessage = 'I would like to invite you take a dinner today.';
 
-// for(let i = 0; i < inviteGuest.length; i++) {
-//     let invitation = inviteGuest[i] + ' ' + invitationMessage;
-//     console.log(invitation);
-// }
+
+
+
+
+
+
+
+
+
+
 
 
 
