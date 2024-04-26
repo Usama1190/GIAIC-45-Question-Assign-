@@ -294,7 +294,7 @@ inviteGuest.forEach(guest => {
     invitationMessage(guest);
 })
 */
-/* 18. Shrinking Guest List: You just found out that your new dinner table
+/* Q18. Shrinking Guest List: You just found out that your new dinner table
 won’t arrive in time for the dinner, and you have space for only two guests.
 
 • Start with your program from Exercise 16. Add a new line that prints a
@@ -341,7 +341,7 @@ inviteGuest.pop();
 
 console.log(inviteGuest);
 */
-/* 19. Seeing the World: Think of at least five places in the world you’d
+/* Q19. Seeing the World: Think of at least five places in the world you’d
 like to visit.
 
 • Store the locations in a array. Make sure the array is not in alphabetical
@@ -392,7 +392,7 @@ console.log('changed array, Sorted order ', favorite_places.sort());
 
 console.log('Sorted and reverse order ', favorite_places.sort().reverse());
 */
-/* 20. Dinner Guests: Working with one of the programs from Exercises 14
+/* Q20. Dinner Guests: Working with one of the programs from Exercises 14
 through 18, print a message indicating the number of people you are inviting
 to dinner. */
 /*
@@ -400,7 +400,7 @@ let invitePerson = ['Asad','Hamza','Ali','Hassan'];
 
 console.log(`${invitePerson.length} peoples are invited for dinner`);
 */
-/* 21. Think of something you could store in a array. For example, you could
+/* Q21. Think of something you could store in a array. For example, you could
 make a list of mountains, rivers, countries, cities, languages, or anything
 else you’d like. Write a program that creates a list containing these items.
 
@@ -411,7 +411,7 @@ let favorite_things = ['Mount Everest','Amazon river','USA','New york','English 
 
 console.log(favorite_things);
 */
-/* 22. They think of something you could store in a TypeScript Object. Write
+/* Q22. They think of something you could store in a TypeScript Object. Write
 a program that creates Objects containing these items. */
 /*
 let favorite_things_object = {
@@ -425,23 +425,25 @@ let favorite_things_object = {
 
 console.log(favorite_things_object);
 */
-/* 23. Intentional Error: If you haven’t received an array index error in one of
+/* Q23. Intentional Error: If you haven’t received an array index error in one of
 your programs yet, try to make one happen. Change an index in one of your
 programs to produce an index error. Make sure you correct the error before
 closing the program. */
-var myArray = [50, 60, 70];
+/*
+let myArray = [50,60,70];
 console.log('Before Index Error');
-try {
+try{
     // Intentionally causing Array Index Out Of Bounds Exception
     console.log("Element at index [4] is " + myArray[4]);
 }
-catch (err) {
-    console.error("Oops! An error occurred: ".concat(err));
+catch(err){
+    console.error(`Oops! An error occurred: ${err}`);
 }
-finally {
+finally{
     console.log("Element at index [4] is " + myArray[4]);
 }
-/* 24. Conditional Tests: Write a series of conditional tests. Print a
+*/
+/* Q24. Conditional Tests: Write a series of conditional tests. Print a
 statement describing each test and your prediction for the results of each
 test. Your code should look something like this:
 
@@ -456,27 +458,30 @@ evaluates to True or False.
 
 • Create at least 10 tests. Have at least 5 tests evaluate to True and
 another 5 tests evaluate to False. */
-// • Create at least 10 tests. Have at least 5 tests evaluate to True and 
-// let  x = 10;
-// let y = 5;
-// console.log("Is x > y? I predict True.");
-// console.log(x>y)
-// console.log("Does x equal y? I predict False.");
-// console.log(x==y)
-// console.log(x>y)
-// Array
-// console.log("Does x equal y? I predict False.");
-// console.log("Is x <= y? I predict True.");
-// console.log(x<=y)
-// console.log("Is x != y? I predict True.");
-// console.log(x!=y)
-// console.log("Is x >= y? I predict False.");
-// console.log(x>=y)
-// Additional tests
-// console.log(`If x is ${x} and y is ${y}, then their sum is ${x+y}.`) // true
-// console.log((x + y).toString() === `${x}${y}`)                       // false
-// console.log(`The product of x and y is ${x*y}.`);                
-/* 25. More Conditional Tests: You don’t have to limit the number of tests you
+/*
+let age: number = 22;
+let studentName: string = 'Usama';
+let isStudent: boolean = true;
+let car: string = 'BMW';
+let fruits: string[] = ['apple', 'banana', 'orange'];
+let numberArray: number[] = [1, 2, 3, 4, 5];
+
+console.log("Is age > 18? I predict True.", age > 18);
+console.log("Is age < 20? I predict False.", age < 20);
+
+console.log("Is name == 'Usama'? I predict True.", studentName == 'Usama');
+console.log("Is studentName == 'Bob'? I predict False.", studentName == 'Bob');
+
+console.log("Is isStudent true? I predict True.", isStudent);
+console.log("Is isStudent false? I predict False.", !isStudent);
+
+console.log("Is car == 'BMW'? I predict True.", car == 'BMW');
+console.log("Is car == 'toyota'? I predict False.", car == 'toyota');
+
+console.log("Is 'banana' included in fruits? I predict True.", fruits.includes('banana'));
+console.log("Is 'grape' included in fruits? I predict False.", fruits.includes('graps'));
+*/
+/* Q25. More Conditional Tests: You don’t have to limit the number of tests you
 create to 10. If you want to try more comparisons, write more tests. Have
 at least one True and one False result for each of the following:
 
@@ -491,8 +496,26 @@ than, greater than or equal to, and less than or equal to
 
 • Test whether an item is in a array
 
-• Test whether an item is not in a array
+• Test whether an item is not in a array */
+/*
+let myString = 'Usama';
+console.log('Equality ',myString == 'Usama');
+console.log('Inequality ',myString == 'Hamza');
 
+let myStringLowerCase = myString.toLowerCase();
+console.log('Is Lower case function ', myStringLowerCase == 'usama');
+console.log('Is Lower case function ', myStringLowerCase == 'Usama');
+
+console.log("It's length equals to 5 ", myString.length == 5);
+console.log("It's length equals to 3 ", myString.length == 3);
+
+console.log("It's length smaller than 6 ", myString.length < 6);
+console.log("It's length greater than 5 ", myString.length > 5);
+
+console.log("It's length smaller than equals to 5 ", myString.length <= 5);
+console.log("It's length greater than equals to 5 ", myString.length >= 5);
+*/
+/*
 Alien Colors #1: Imagine an alien was just shot down in a game. Create a
 variable called alien_color and assign it a value of 'green', 'yellow', or
 'red'.
@@ -502,29 +525,38 @@ is, print a message that the player just earned 5 points.
 
 • Write one version of this program that passes the if test and another
 that fails. (The version that fails will have no output.) */
-// var  alien_color = 'green';
-// if(alien_color ==='green') {
-//     console.log('You just earned  5 points!');
-// } else {
-// }
-// Alien Colors #2: Now imagine that the player has scored 3 points by shooting down two red aliens. The variable score
-//Testing string comparison functions
-// console.log("Is 'hello' === 'world'? ", ('hello' === 'world')); //False
-// console.log("Is 'hello' != 'world'? ", ('hello' !== 'world')); //True
+/*
+let alien_color = 'green';
+if(alien_color ==='green') {
+    console.log('You just earned 5 points!');
+} else {
+    
+}
+*/
+/*
+Alien Colors #2: Now imagine that the player has scored 3 points by shooting
+down two red aliens. The variable score
+//Testing string comparison functions */
+/*
+console.log("Is 'hello' === 'world'? ", ('hello' === 'world')); //False
+console.log("Is 'hello' != 'world'? ", ('hello' !== 'world')); //True
+
 //Using the lowercase() method
-// var original_string = "Hello World";
-// var new_string = original_string.toLowerCase();
-// console.log("Original String: "+original_string);
-// console.log("New Lower Case String: "+new_string);
-/*Numerical Comparisons
-Assume we are testing the following variables:
+var original_string = "Hello World";
+var new_string = original_string.toLowerCase();
+console.log("Original String: "+original_string);
+console.log("New Lower Case String: "+new_string);
+
+//Numerical Comparisons Assume we are testing the following variables:
 x = 4;
 y = 7;
-z = 2; */
-// console.log("Is x < y? ",(x<y)); // True
-// console.log("Is x > z? ",(x>z)); // True
-// console.log("Is x <= y ?",(x<=y)); // True
-// console.log("Is x >= z ?",(x>=z)); // False</s>
+z = 2;
+
+console.log("Is x < y? ",(x<y)); // True
+console.log("Is x > z? ",(x>z)); // True
+console.log("Is x <= y ?",(x<=y)); // True
+console.log("Is x >= z ?",(x>=z)); // False</s>
+*/
 /* 26. Alien Colors #2: Choose a color for an alien as you did in Exercise
 25, and write an if-else chain.
 
@@ -536,13 +568,15 @@ earned 10 points.
 
 • Write one version of this program that runs the if block and another that
 runs the else block. */
-// var alienColor = "green";
-// if (alienColor ==="green"){
-//     console.log("You just earned  5 points for shooting the alien.");
-// }
-// else {
-//     console.log("You just earned  10 points.")
-// }
+/*
+var alienColor = "green";
+if (alienColor ==="green"){
+    console.log("You just earned  5 points for shooting the alien.");
+}
+else {
+    console.log("You just earned  10 points.")
+}
+*/
 /* 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an
 if-else chain.
 
@@ -554,22 +588,25 @@ if-else chain.
 
 • Write three versions of this program, making sure each message is printed
 for the appropriate color alien. */
-// let alienColor = prompt('Enter a alien color like green, yellow, red or orange');
-// if(alienColor == 'green') {
-//     console.log('You earn 5 points, b/c you selected green');
-// }
-// else if(alienColor == 'yellow') {
-//     console.log('You earn 10 points, b/c you selected yellow');
-// }
-// else if(alienColor == 'red') {
-//     console.log('You earn 7 points, b/c you selected red');
-// }
-// else if(alienColor == 'orange') {
-//     console.log('You earn 5 points, b/c you selected orange');
-// }
-// else {
-//     console.log('You selected invalid color');
-// }
+/*
+let alienColor = prompt('Enter a alien color like green, yellow, red or orange');
+
+if(alienColor == 'green') {
+    console.log('You earn 5 points, b/c you selected green');
+}
+else if(alienColor == 'yellow') {
+    console.log('You earn 10 points, b/c you selected yellow');
+}
+else if(alienColor == 'red') {
+    console.log('You earn 7 points, b/c you selected red');
+}
+else if(alienColor == 'orange') {
+    console.log('You earn 5 points, b/c you selected orange');
+}
+else {
+    console.log('You selected invalid color');
+}
+*/
 /* 28. Stages of Life: Write an if-else chain that determines a person’s stage of
 life. Set a value for the variable age, and then:
 
@@ -590,25 +627,28 @@ that the person is an adult.
 
 • If the person is age 65 or older, print a message that the person is an
 elder. */
-// let person_age = 23;
-// if(person_age < 2) {
-//     console.log('You are a baby');
-// }
-// else if(person_age >= 2 && person_age < 4) {
-//     console.log('You are a toddler');   
-// }
-// else if(person_age >= 4 && person_age < 13) {
-//     console.log('You are a kid');   
-// }
-// else if(person_age >= 13 && person_age < 20) {
-//     console.log('You are a teeneger');   
-// }
-// else if(person_age >= 20 && person_age < 65) {
-//     console.log('You are a adult');   
-// }
-// else if(person_age >= 65) {
-//     console.log('You are a elder');   
-// }
+/*
+let person_age = 23;
+
+if(person_age < 2) {
+    console.log('You are a baby');
+}
+else if(person_age >= 2 && person_age < 4) {
+    console.log('You are a toddler');
+}
+else if(person_age >= 4 && person_age < 13) {
+    console.log('You are a kid');
+}
+else if(person_age >= 13 && person_age < 20) {
+    console.log('You are a teeneger');
+}
+else if(person_age >= 20 && person_age < 65) {
+    console.log('You are a adult');
+}
+else if(person_age >= 65) {
+    console.log('You are a elder');
+}
+*/
 /* 29. Favorite Fruit: Make a array of your favorite fruits, and then write a
 series of independent if statements that check for certain fruits in your
 array.
@@ -618,17 +658,20 @@ array.
 • Write five if statements. Each should check whether a certain kind of
 fruit is in your array. If the fruit is in your array, the if block should
 print a statement, such as You really like bananas! */
-// let favorite_fruits = ['banana','mango','orange','apple','pine apple','graps'];
-// if (favorite_fruits.includes('banana')) {
-//     console.log('I like banana');
-// }
-// else if (favorite_fruits.includes('mango')) {
-//     console.log('I like mango');
-// }
-// else if (favorite_fruits.includes('orange')) {
-//     console.log('I like orange');
-// }
-// else if (favorite_fruits.includes('')) {}
+/*
+let favorite_fruits = ['banana','mango','orange','apple','pine apple','graps'];
+
+if (favorite_fruits.includes('banana')) {
+    console.log('I like banana');
+}
+else if (favorite_fruits.includes('mango')) {
+    console.log('I like mango');
+}
+else if (favorite_fruits.includes('orange')) {
+    console.log('I like orange');
+}
+else if (favorite_fruits.includes('')) {}
+*/
 /* 30. Hello Admin: Make a array of five or more usernames, including the
 name 'admin'. Imagine you are writing code that will print a greeting to
 each user after they log in to a website. Loop through the array, and print
@@ -639,6 +682,14 @@ would you like to see a status report?
 
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for
 logging in again. */
+var userName = ['Usama', 'Hamza', 'Asad', 'Ali', 'Umar', 'Hassan'];
+var admin = 'Usama';
+userName.forEach(function (user) {
+    console.log("Hello ".concat(user, ", thank you for logging in again"));
+    if (user == admin) {
+        console.log("Hello ".concat(admin, ", would you like to see a status report?"));
+    }
+});
 /* 31. No Users: Add an if test to Exercise 28 to make sure the list of users is
 not empty.
 
@@ -760,8 +811,8 @@ a sandwich. The function should have one parameter that collects as many
 items as the function call provides, and it should print a summary of the
 sandwich that is being ordered. Call the function three times, using a
 different number of arguments each time. */
-/* 45. Cars: Write a function that stores information about a car in a Object. The
-function should always receive a manufacturer and a model name. It should
+/* 45. Cars: Write a function that stores information about a car in a Object.
+The function should always receive a manufacturer and a model name. It should
 then accept an arbitrary number of keyword arguments. Call the function
 with the required information and two other name-value pairs, such as a
 color or an optional feature. Print the Object that’s returned to make
