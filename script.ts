@@ -275,7 +275,7 @@ favoriteTransportation.forEach( transport => {
 
 
 
-/* 14. Guest List: If you could invite anyone, living or deceased, to 
+/* Q14. Guest List: If you could invite anyone, living or deceased, to 
 dinner, who would you invite? Make a list that includes at least three 
 people you’d like to invite to dinner. Then use your list to print a 
 message to each person, inviting them to dinner. */
@@ -294,26 +294,9 @@ invitePerson.forEach( person => {
 
 /* Q15. Changing Guest List: You just heard that one of your guests can’t 
 make the dinner, so you need to send out a new set of invitations. You’ll 
-have to think of someone else to invite. */
+have to think of someone else to invite. 
 
-/*
-let inviteGuest = ['Asad','Umar','Hamza','Ali'];
-
-// Remove a guest who can't make it and add a new guest
-inviteGuest.pop();
-inviteGuest.push('Hamza');
-
-inviteGuest.forEach( guest => {
-    console.log(`Dear ${guest}, I would like to invite you to dinner`);
-    
-})
-*/
-
-
-
-
-
-/* Q16. • Start with your program from Exercise 14. Add a print statement at 
+• Start with your program from Exercise 14. Add a print statement at 
 the end of your program stating the name of the guest who can’t make it.
 
 • Modify your list, replacing the name of the guest who can’t make it with 
@@ -321,6 +304,7 @@ the name of the new person you are inviting.
 
 • Print a second set of invitation messages, one for each person who is 
 still in your list. */ 
+
 
 
 /*
@@ -337,6 +321,7 @@ inviteGuest.forEach( guest => {
     
 })
 
+// Remove a guest who can't make it and add a new guest
 const notComing = 'Hamza';
 const newGuest = 'Usman';
 
@@ -353,7 +338,7 @@ inviteGuest.forEach( guest => {
 
 
 
-/* Q17. More Guests: You just found a bigger dinner table, so now more space 
+/* Q16. More Guests: You just found a bigger dinner table, so now more space 
 is available. Think of three more guests to invite to dinner.
 
 • Start with your program from Exercise 15. Add a print statement to the 
@@ -399,7 +384,7 @@ inviteGuest.forEach(guest => {
 
 
 
-/* Q18. Shrinking Guest List: You just found out that your new dinner table 
+/* Q17. Shrinking Guest List: You just found out that your new dinner table 
 won’t arrive in time for the dinner, and you have space for only two guests.
 
 • Start with your program from Exercise 16. Add a new line that prints a 
@@ -451,7 +436,7 @@ console.log(inviteGuest);
 
 
 
-/* Q19. Seeing the World: Think of at least five places in the world you’d 
+/* Q18. Seeing the World: Think of at least five places in the world you’d 
 like to visit.
 
 • Store the locations in a array. Make sure the array is not in alphabetical 
@@ -509,7 +494,7 @@ console.log('Sorted and reverse order ', favorite_places.sort().reverse());
 
 
 
-/* Q20. Dinner Guests: Working with one of the programs from Exercises 14 
+/* Q19. Dinner Guests: Working with one of the programs from Exercises 14 
 through 18, print a message indicating the number of people you are inviting 
 to dinner. */
 
@@ -524,7 +509,7 @@ console.log(`${invitePerson.length} peoples are invited for dinner`);
 
 
 
-/* Q21. Think of something you could store in a array. For example, you could 
+/* Q20. Think of something you could store in a array. For example, you could 
 make a list of mountains, rivers, countries, cities, languages, or anything 
 else you’d like. Write a program that creates a list containing these items. 
 
@@ -541,7 +526,7 @@ console.log(favorite_things);
 
 
 
-/* Q22. They think of something you could store in a TypeScript Object. Write 
+/* Q21. They think of something you could store in a TypeScript Object. Write 
 a program that creates Objects containing these items. */
 
 
@@ -566,7 +551,7 @@ console.log(favorite_things_object);
 
 
 
-/* Q23. Intentional Error: If you haven’t received an array index error in one of 
+/* Q22. Intentional Error: If you haven’t received an array index error in one of 
 your programs yet, try to make one happen. Change an index in one of your 
 programs to produce an index error. Make sure you correct the error before 
 closing the program. */
@@ -592,7 +577,7 @@ finally{
 
 
 
-/* Q24. Conditional Tests: Write a series of conditional tests. Print a 
+/* Q23. Conditional Tests: Write a series of conditional tests. Print a 
 statement describing each test and your prediction for the results of each 
 test. Your code should look something like this:
 
@@ -635,7 +620,7 @@ console.log("Is 'grape' included in fruits? I predict False.", fruits.includes('
 
 
 
-/* Q25. More Conditional Tests: You don’t have to limit the number of tests you 
+/* Q24. More Conditional Tests: You don’t have to limit the number of tests you 
 create to 10. If you want to try more comparisons, write more tests. Have 
 at least one True and one False result for each of the following:
 
@@ -675,8 +660,7 @@ console.log("It's length greater than equals to 5 ", myString.length >= 5);
 
 
 
-/*
-Alien Colors #1: Imagine an alien was just shot down in a game. Create a 
+/* Q25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a 
 variable called alien_color and assign it a value of 'green', 'yellow', or 
 'red'.
 
@@ -699,57 +683,43 @@ if(alien_color ==='green') {
 
 
 
-/*
-Alien Colors #2: Now imagine that the player has scored 3 points by shooting 
-down two red aliens. The variable score
-//Testing string comparison functions */
+/* Q26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, 
+and write an if-else chain.
 
-
-/*
-console.log("Is 'hello' === 'world'? ", ('hello' === 'world')); //False
-console.log("Is 'hello' != 'world'? ", ('hello' !== 'world')); //True
-
-//Using the lowercase() method
-var original_string = "Hello World";
-var new_string = original_string.toLowerCase();
-console.log("Original String: "+original_string);
-console.log("New Lower Case String: "+new_string);
-
-//Numerical Comparisons Assume we are testing the following variables:
-x = 4;
-y = 7;
-z = 2;
-
-console.log("Is x < y? ",(x<y)); // True
-console.log("Is x > z? ",(x>z)); // True
-console.log("Is x <= y ?",(x<=y)); // True
-console.log("Is x >= z ?",(x>=z)); // False</s>
-*/
-
-
-
-
-
-/* 26. Alien Colors #2: Choose a color for an alien as you did in Exercise 
-25, and write an if-else chain.
-
-• If the alien’s color is green, print a statement that the player just 
-earned 5 points for shooting the alien.
+• If the alien’s color is green, print a statement that the player just earned 
+5 points for shooting the alien.
 
 • If the alien’s color isn’t green, print a statement that the player just 
 earned 10 points.
 
 • Write one version of this program that runs the if block and another that 
-runs the else block. */
-
+runs the else block.*/
 
 /*
-var alienColor = "green";
-if (alienColor ==="green"){
-    console.log("You just earned  5 points for shooting the alien.");
+// version 1 running if block
+let alien_color = 'green';
+
+if(alien_color == 'green') {
+    console.log('You just earn 5 points');
+    
 }
 else {
-    console.log("You just earned  10 points.")
+    console.log('You just earn 10 points');
+    
+}
+*/
+
+/*
+// version 2 running else block
+let alien_color = 'red';
+
+if(alien_color == 'green') {
+    console.log('You just earn 5 points');
+    
+}
+else {
+    console.log('You just earn 10 points');
+    
 }
 */
 
@@ -766,53 +736,83 @@ if-else chain.
 
 • If the alien is red, print a message that the player earned 15 points.
 
-• Write three versions of this program, making sure each message is printed 
-for the appropriate color alien. */
+• Write three versions of this program, making sure each message is printed for 
+the appropriate color alien. */
 
 
 /*
-let alienColor = prompt('Enter a alien color like green, yellow, red or orange');
+// version 1 alien_color green
+let alienColor = "green";
 
-if(alienColor == 'green') {
-    console.log('You earn 5 points, b/c you selected green');
+if (alienColor ==="green"){
+    console.log("You just earned  5 points for shooting the alien.");
 }
-else if(alienColor == 'yellow') {
-    console.log('You earn 10 points, b/c you selected yellow');
+else if(alienColor === 'yellow'){
+    console.log("You just earned  10 points.")
 }
-else if(alienColor == 'red') {
-    console.log('You earn 7 points, b/c you selected red');
+else if(alienColor === 'red') {
+    console.log("You just earned 15 points");
+    
 }
-else if(alienColor == 'orange') {
-    console.log('You earn 5 points, b/c you selected orange');
+*/
+
+/*
+// version 2 alien_color yellow
+let alienColor = "yellow";
+
+if (alienColor ==="green"){
+    console.log("You just earned  5 points for shooting the alien.");
 }
-else {
-    console.log('You selected invalid color');
+else if(alienColor === 'yellow'){
+    console.log("You just earned  10 points.")
+}
+else if(alienColor === 'red') {
+    console.log("You just earned 15 points");
+    
+}
+*/
+
+
+/*
+// version 3 alien_color red
+let alienColor = "red";
+
+if (alienColor ==="green"){
+    console.log("You just earned  5 points for shooting the alien.");
+}
+else if(alienColor === 'yellow'){
+    console.log("You just earned  10 points.")
+}
+else if(alienColor === 'red') {
+    console.log("You just earned 15 points");
+    
 }
 */
 
 
 
 
-/* 28. Stages of Life: Write an if-else chain that determines a person’s stage of 
-life. Set a value for the variable age, and then:
 
-• If the person is less than 2 years old, print a message that the person is 
-a baby.
 
-• If the person is at least 2 years old but less than 4, print a message 
-that the person is a toddler.
+/* 28. Stages of Life: Write an if-else chain that determines a person’s stage 
+of life. Set a value for the variable age, and then:
 
-• If the person is at least 4 years old but less than 13, print a message 
-that the person is a kid.
+• If the person is less than 2 years old, print a message that the person is a 
+baby.
 
-• If the person is at least 13 years old but less than 20, print a message 
-that the person is a teenager.
+• If the person is at least 2 years old but less than 4, print a message that 
+the person is a toddler.
 
-• If the person is at least 20 years old but less than 65, print a message 
-that the person is an adult.
+• If the person is at least 4 years old but less than 13, print a message that 
+the person is a kid.
 
-• If the person is age 65 or older, print a message that the person is an 
-elder. */
+• If the person is at least 13 years old but less than 20, print a message that 
+the person is a teenager.
+
+• If the person is at least 20 years old but less than 65, print a message that 
+the person is an adult.
+
+• If the person is age 65 or older, print a message that the person is an elder. */
 
 
 /*
@@ -855,18 +855,29 @@ print a statement, such as You really like bananas! */
 
 
 /*
-let favorite_fruits = ['banana','mango','orange','apple','pine apple','graps'];
+let favorite_fruits: string[] = ['banana','mango','orange','apple'];
 
 if (favorite_fruits.includes('banana')) {
-    console.log('I like banana');
+    console.log('I like banana!');
 }
-else if (favorite_fruits.includes('mango')) {
-    console.log('I like mango');
+
+if (favorite_fruits.includes('mango')) {
+    console.log('I like mango!');
 }
-else if (favorite_fruits.includes('orange')) {
-    console.log('I like orange');
+
+if (favorite_fruits.includes('orange')) {
+    console.log('I like orange!');
 }
-else if (favorite_fruits.includes('')) {}
+
+if (favorite_fruits.includes('apple')) {
+    console.log('I like apples!');
+    
+}
+
+if(favorite_fruits.includes('graps')){
+    console.log('graps not add in my list');
+    
+}
 */
 
 
@@ -889,18 +900,18 @@ logging in again. */
 /*
 let userName = ['Usama','Hamza','Asad','Ali','Umar','Hassan'];
 
-let admin = 'Usama';
-
-userName.forEach( user => {
-    console.log(`Hello ${user}, thank you for logging in again`);
-
-    if(user == admin) {
-        console.log(`Hello ${admin}, would you like to see a status report?`);
+for(let user of userName) {
+    if(user == 'Usama') {
+        console.log(`Hello ${user}, would you like to see a status report`);
         
     }
-    
-})
+    else {
+        console.log(`Hello ${user}, thank you for logging in again`);
+        
+    }
+}
 */
+
 
 
 
@@ -915,15 +926,28 @@ not empty.
 message is printed. */
 
 
+/*
+let userName = ['Usama','Hamza','Asad','Ali','Umar','Hassan'];
+
+userName = [];
+
+if(userName.length === 0) {
+    console.log('We need to find some user!');
+    
+}
+else {
+    console.log('We have some users.');
+    
+}
+*/
 
 
 
 
 
 
-
-/* 32. Checking Usernames: Do the following to create a program that simulates how 
-websites ensure that everyone has a unique username.
+/* 32. Checking Usernames: Do the following to create a program that simulates 
+how websites ensure that everyone has a unique username.
 
 • Make a list of five or more usernames called current_users.
 
@@ -939,6 +963,24 @@ the username is available.
 'JOHN' should not be accepted. */
 
 
+/*
+let current_users = ['hamza','asad','ali','umar','abdullah'];
+
+let new_users = ['usama','usman','asad','abdullah','zayn'];
+
+function isUsernameTaken(username: string): boolean {
+    return current_users.some(user => user.toLowerCase() === username.toLowerCase());
+}
+
+new_users.forEach(user => {
+    if (isUsernameTaken(user)) {
+        console.log(`Sorry, the username '${user}' is not available. Please choose a different one.`);
+    } else {
+        console.log(`The username '${user}' is available.`);
+    }
+});
+*/
+
 
 
 
@@ -953,11 +995,32 @@ such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
 
 • Use an if-else chain inside the loop to print the proper ordinal ending 
 for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 
-9th", and each result should be on a separate line.
+9th", and each result should be on a separate line. */
 
 
+/*
+let myNumbers = [1,2,3,4,5,6,7,8,9];
 
-
+myNumbers.forEach(number => {
+    if(number === 1) {
+        console.log(number + 'st');
+        
+    }
+    else if(number === 2) {
+        console.log(number + 'nd');
+        
+    }
+    else if(number === 3) {
+        console.log(number + 'rd');
+        
+    }
+    else{
+        console.log(number + 'th');
+        
+    }
+    
+})
+*/
 
 
 
@@ -980,8 +1043,21 @@ about the kinds of pizza you like and then an additional sentence, such as
 I really love pizza! */
 
 
+/*
+let favoritePizzas = ['BBQ Pizza', 'Chickan Fajita Pizza', 'Sicilian Pizza'];
 
+for(let pizza of favoritePizzas) {
+    console.log(pizza);
+    
+}
 
+for(let pizza of favoritePizzas) {
+    console.log(`I really like ${pizza}.`);
+    
+}
+
+console.log('I love Pizzas');
+*/
 
 
 
@@ -997,9 +1073,19 @@ common. You could print a sentence such as Any of these animals would make
 a great pet! */
 
 
+/*
+let petNames = ['dog', 'cat', 'goat'];
 
+for(let pet of petNames) {
+    console.log(pet);
+    
+}
 
-
+for(let pet of petNames) {
+    console.log(`A ${pet} would make a great pet`);
+    
+}
+*/
 
 
 
@@ -1011,10 +1097,14 @@ should print a sentence summarizing the size of the shirt and the message
 printed on it. Call the function. */
 
 
+/*
+function make_shirt(size: number, message: string) {
+    console.log(`The shirt size is ${size} and print on it is ${message}`);
+    
+}
 
-
-
-
+make_shirt(24, 'Hrray Potter');
+*/
 
 
 
@@ -1026,8 +1116,14 @@ shirt and a medium shirt with the default message, and a shirt of any size
 with a different message. */
 
 
+/*
+function make_shirt(size: number = 24 && 18, messages: string = 'I love TypeScript') {
+    console.log(`The shirt size is ${size} and print message on it ${messages}`);
+    
+}
 
-
+make_shirt();
+*/
 
 
 
@@ -1040,6 +1136,14 @@ value. Call your function for three different cities, at least one of which
 is not in the default country. */
 
 
+/*
+function describe_city(city: string = 'Karachi', country: string = 'Pakistan') {
+    console.log(`${city} is in ${country}`);
+    
+}
+
+describe_city();
+*/
 
 
 
@@ -1054,7 +1158,16 @@ Call your function with at least three city-country pairs, and print
 the value that’s returned. */
 
 
+/*
+function city_country(city: string, country: string) {
+    return console.log(`"${city}, ${country}"`);
+    
+}
 
+city_country('Karachi', 'Pakistan');
+city_country('Bristol', 'England');
+city_country('New York', 'America');
+*/
 
 
 
@@ -1072,6 +1185,36 @@ album’s Object. Make at least one new function call that includes the
 number of tracks on an album. */
 
 
+/*
+interface Album {
+    artistName: string,
+    albumTitle: string,
+    numberOfTracks?: number
+}
+
+
+function make_album(artistName: string, albumTitle: string, numberOfTracks?: number) {
+    const myAlbum: Album = {
+        artistName: artistName,
+        albumTitle: albumTitle,
+    }
+
+    if(numberOfTracks !== undefined) {
+        myAlbum.numberOfTracks = numberOfTracks;
+    }
+
+    return myAlbum;
+}
+
+
+const album_1 = make_album('Artist_1', 'Album title 1', 10);
+const album_2 = make_album('Artist_2', 'Album title 2');
+const album_3 = make_album('Artist_3', 'Album title 3', 30);
+
+console.log(album_1);
+console.log(album_2);
+console.log(album_3);
+*/
 
 
 
@@ -1082,20 +1225,18 @@ function called show_magicians(), which prints the name of each magician
 in the array. */
 
 
+/*
+let megician_names: string[] = ['Daniel', 'Gabriel', 'Alejandro', 'Diego'];
 
-// function showMegicians() {
-//     let medicianName = ['abc1','abc2','abc3','abc4','abc5'];
-
-//     for(let i = 0; i < medicianName.length; i++) {
-//         let medicianNamePartial = medicianName[i];
-
-//         console.log(medicianNamePartial);
+function show_megician(megicians: string[]) {
+    for(let i = 0; i < megicians.length; i ++) {
+        console.log(megicians[i]);
         
-//     }
+    }
+}
 
-// }
-
-// showMegicians();
+show_megician(megician_names);
+*/
 
 
 
@@ -1105,6 +1246,36 @@ in the array. */
 a function called make_great() that modifies the array of magicians by 
 adding the phrase the Great to each magician’s name. Call show_magicians() 
 to see that the list has actually been modified. */
+
+
+/*
+interface Megician {
+    name: string;
+}
+
+const megicians: Megician[] = [
+    {name: 'Daniel'},
+    {name: 'Gabriel'},
+    {name: 'Alejandro'}
+]
+
+function make_great(megicians: Megician[]): void {
+    for(let megician of megicians) {
+        megician.name = `The Great ${megician.name}`;
+    }
+}
+
+function show_magicians(megicians: Megician[]): void {
+    for(let megician of megicians) {
+        console.log(megician);
+        
+    }
+}
+
+make_great(megicians);
+
+show_magicians(megicians);
+*/
 
 
 
@@ -1120,6 +1291,49 @@ the Great added to each magician’s name. */
 
 
 
+// Define an interface for Magician
+interface Magician {
+    name: string;
+}
+
+// Array of magicians
+const magicians: Magician[] = [
+    { name: "Merlin" },
+    { name: "Gandalf" },
+    { name: "Dumbledore" }
+];
+
+// Function to make the magicians great
+function make_great(magicians: Magician[]): Magician[] {
+    const modifiedMagicians: Magician[] = [];
+    for (let magician of magicians) {
+        modifiedMagicians.push({ name: `the Great ${magician.name}` });
+    }
+    return modifiedMagicians;
+}
+
+// Function to show the magicians
+function show_magicians(magicians: Magician[]): void {
+    console.log("List of Magicians:");
+    for (let magician of magicians) {
+        console.log(magician.name);
+    }
+}
+
+// Call make_great with a copy of the original array
+const greatMagicians = make_great([...magicians]);
+
+// Call show_magicians with the original array
+console.log("Original Magicians:");
+show_magicians(magicians);
+
+// Call show_magicians with the array of great magicians
+console.log("\nGreat Magicians:");
+show_magicians(greatMagicians);
+
+
+
+
 
 
 
@@ -1129,6 +1343,10 @@ a sandwich. The function should have one parameter that collects as many
 items as the function call provides, and it should print a summary of the 
 sandwich that is being ordered. Call the function three times, using a 
 different number of arguments each time. */
+
+
+
+
 
 
 
