@@ -1043,7 +1043,7 @@ about the kinds of pizza you like and then an additional sentence, such as
 I really love pizza! */
 
 
-/*
+/*\
 let favoritePizzas = ['BBQ Pizza', 'Chickan Fajita Pizza', 'Sicilian Pizza'];
 
 for(let pizza of favoritePizzas) {
@@ -1290,62 +1290,72 @@ show that you have one array of the original names and one array with
 the Great added to each magician’s name. */
 
 
-
-// Define an interface for Magician
+/*
 interface Magician {
     name: string;
 }
 
-// Array of magicians
 const magicians: Magician[] = [
-    { name: "Merlin" },
-    { name: "Gandalf" },
-    { name: "Dumbledore" }
-];
+    {name: 'Daniel'},
+    {name: 'Gabriel'},
+    {name: 'Alejandro'}
+]
 
-// Function to make the magicians great
-function make_great(magicians: Magician[]): Magician[] {
+function make_great(megicians: Magician[]): Magician[] {
     const modifiedMagicians: Magician[] = [];
-    for (let magician of magicians) {
-        modifiedMagicians.push({ name: `the Great ${magician.name}` });
+
+    for(let magician of magicians) {
+        modifiedMagicians.push({name: `The Great ${magician.name}`});
     }
+
     return modifiedMagicians;
 }
 
-// Function to show the magicians
+
 function show_magicians(magicians: Magician[]): void {
-    console.log("List of Magicians:");
-    for (let magician of magicians) {
+    for(let magician of magicians) {
         console.log(magician.name);
+        
     }
 }
 
-// Call make_great with a copy of the original array
-const greatMagicians = make_great([...magicians]);
+const geatMagicians = make_great([...magicians]);
 
-// Call show_magicians with the original array
-console.log("Original Magicians:");
 show_magicians(magicians);
 
-// Call show_magicians with the array of great magicians
-console.log("\nGreat Magicians:");
-show_magicians(greatMagicians);
+show_magicians(geatMagicians);
+*/
 
 
 
 
 
 
-
-
-/* 44. Sandwiches: Write a function that accepts a array of items a person wants on 
-a sandwich. The function should have one parameter that collects as many 
-items as the function call provides, and it should print a summary of the 
+/* 44. Sandwiches: Write a function that accepts a array of items a person 
+wants on a sandwich. The function should have one parameter that collects as 
+many items as the function call provides, and it should print a summary of the 
 sandwich that is being ordered. Call the function three times, using a 
 different number of arguments each time. */
 
 
+/*
+function makeSandwich(...items: string[]):void {
+    if(items.length === 0) {
+        console.log('You ordered an empty sandwich. Please specify some items.');
+        
+    }
+    else {
+        console.log('You ordered a sandwich with the following items:');
+        items.forEach(item => {console.log(`- ${item}`);
+        })
+        
+    }
+}
 
+makeSandwich("Ham", "Cheese", "Lettuce");
+makeSandwich('Turkey', 'Tomato');
+makeSandwich();
+*/
 
 
 
@@ -1354,10 +1364,31 @@ different number of arguments each time. */
 
 /* 45. Cars: Write a function that stores information about a car in a Object. 
 The function should always receive a manufacturer and a model name. It should 
-then accept an arbitrary number of keyword arguments. Call the function 
-with the required information and two other name-value pairs, such as a 
-color or an optional feature. Print the Object that’s returned to make 
-sure all the information was stored correctly. */
+then accept an arbitrary number of keyword arguments. Call the function with 
+the required information and two other name-value pairs, such as a color or an 
+optional feature. Print the Object that’s returned to make sure all the 
+information was stored correctly. */
 
 
-// color or an optional feature. Print the Object that’s returned to make 
+/*
+interface Car {
+    manufacturer: string;
+    modelName: string;
+    [key: string]: any;
+}
+
+
+function storeCarInfo(manufacturer: string, modelName: string, ...extras: { [key: string]: any} []):Car {
+    const car: Car = {
+        manufacturer,
+        modelName,
+        ...extras.reduce((acc, extra) => ({ ...acc, ...extra}), {})
+    };
+
+    return car;
+}
+
+const carInfo = storeCarInfo("Toyota", "Camry", { color: "Blue" }, { year: 2022 });
+
+console.log(carInfo);
+*/

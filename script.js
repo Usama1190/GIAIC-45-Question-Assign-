@@ -1,53 +1,22 @@
 // Q1. Install Node.js, TypeScript and VS Code on your computer.
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
         }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-// Array of magicians
-var magicians = [
-    { name: "Merlin" },
-    { name: "Gandalf" },
-    { name: "Dumbledore" }
-];
-// Function to make the magicians great
-function make_great(magicians) {
-    var modifiedMagicians = [];
-    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
-        var magician = magicians_1[_i];
-        modifiedMagicians.push({ name: "the Great ".concat(magician.name) });
+function storeCarInfo(manufacturer, modelName) {
+    var extras = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        extras[_i - 2] = arguments[_i];
     }
-    return modifiedMagicians;
+    var car = __assign({ manufacturer: manufacturer, modelName: modelName }, extras.reduce(function (acc, extra) { return (__assign(__assign({}, acc), extra)); }, {}));
+    return car;
 }
-// Function to show the magicians
-function show_magicians(magicians) {
-    console.log("List of Magicians:");
-    for (var _i = 0, magicians_2 = magicians; _i < magicians_2.length; _i++) {
-        var magician = magicians_2[_i];
-        console.log(magician.name);
-    }
-}
-// Call make_great with a copy of the original array
-var greatMagicians = make_great(__spreadArray([], magicians, true));
-// Call show_magicians with the original array
-console.log("Original Magicians:");
-show_magicians(magicians);
-// Call show_magicians with the array of great magicians
-console.log("\nGreat Magicians:");
-show_magicians(greatMagicians);
-/* 44. Sandwiches: Write a function that accepts a array of items a person wants on
-a sandwich. The function should have one parameter that collects as many
-items as the function call provides, and it should print a summary of the
-sandwich that is being ordered. Call the function three times, using a
-different number of arguments each time. */
-/* 45. Cars: Write a function that stores information about a car in a Object.
-The function should always receive a manufacturer and a model name. It should
-then accept an arbitrary number of keyword arguments. Call the function
-with the required information and two other name-value pairs, such as a
-color or an optional feature. Print the Object that’s returned to make
-sure all the information was stored correctly. */
-// color or an optional feature. Print the Object that’s returned to make 
+var carInfo = storeCarInfo("Toyota", "Camry", { color: "Blue" }, { year: 2022 });
+console.log(carInfo);
